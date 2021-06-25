@@ -10,7 +10,7 @@ using System.Text.Json;
 using Azure.Core;
 using Azure.ResourceManager.Core;
 
-namespace Azure.ResourceManager.NewResources
+namespace Azure.ResourceManager.Core
 {
     public partial class PolicyAssignmentData : IUtf8JsonSerializable
     {

@@ -13,7 +13,7 @@ using Azure;
 using Azure.Core.Pipeline;
 using Azure.ResourceManager.Core;
 
-namespace Azure.ResourceManager.NewResources
+namespace Azure.ResourceManager.Core
 {
     /// <summary> A class representing the operations that can be performed over a specific PolicyAssignment. </summary>
     public partial class PolicyAssignmentOperations : OperationsBase
@@ -34,8 +34,10 @@ namespace Azure.ResourceManager.NewResources
             _clientDiagnostics = new ClientDiagnostics(ClientOptions);
             RestClient = new PolicyAssignmentsRestOperations(_clientDiagnostics, Pipeline, endpoint: BaseUri);
         }
-
+        /// <summary> ResourceType</summary>
         public static readonly ResourceType ResourceType = "Microsoft.Authorization/policyAssignments";
+
+        /// <summary> ValidResourceType</summary>
         protected override ResourceType ValidResourceType => ResourceType;
 
         /// <inheritdoc />

@@ -136,6 +136,14 @@ namespace Azure.ResourceManager.Core
         }
 
         /// <summary>
+        /// Gets the PolicyAssignmentContainer.
+        /// </summary>
+        public virtual PolicyAssignmentContainer GetPolicyAssignmentContainer()
+        {
+            return new PolicyAssignmentContainer(ClientOptions, Credential, BaseUri, Pipeline);
+        }
+
+        /// <summary>
         /// Gets a resource group operations object.
         /// </summary>
         /// <param name="id"> The id of the resourcegroup </param>

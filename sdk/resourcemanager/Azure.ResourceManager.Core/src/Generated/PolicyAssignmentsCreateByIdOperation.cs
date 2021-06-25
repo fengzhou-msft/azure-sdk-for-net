@@ -12,19 +12,19 @@ using Azure;
 using Azure.Core;
 using Azure.ResourceManager.Core;
 
-namespace Azure.ResourceManager.NewResources
+namespace Azure.ResourceManager.Core
 {
-    /// <summary>  This operation creates or updates a policy assignment with the given scope and name. Policy assignments apply to all resources contained within their scope. For example, when you assign a policy at resource group scope, that policy applies to all resources in the group. </summary>
-    public partial class PolicyAssignmentsCreateOperation : Operation<PolicyAssignment>
+    /// <summary> This operation creates or updates the policy assignment with the given ID. Policy assignments made on a scope apply to all resources contained in that scope. For example, when you assign a policy to a resource group that policy applies to all resources in the group. Policy assignment IDs have this format: &apos;{scope}/providers/Microsoft.Authorization/policyAssignments/{policyAssignmentName}&apos;. Valid scopes are: management group (format: &apos;/providers/Microsoft.Management/managementGroups/{managementGroup}&apos;), subscription (format: &apos;/subscriptions/{subscriptionId}&apos;), resource group (format: &apos;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}&apos;, or resource (format: &apos;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/[{parentResourcePath}/]{resourceType}/{resourceName}&apos;. </summary>
+    public partial class PolicyAssignmentsCreateByIdOperation : Operation<PolicyAssignment>
     {
         private readonly OperationOrResponseInternals<PolicyAssignment> _operation;
 
-        /// <summary> Initializes a new instance of PolicyAssignmentsCreateOperation for mocking. </summary>
-        protected PolicyAssignmentsCreateOperation()
+        /// <summary> Initializes a new instance of PolicyAssignmentsCreateByIdOperation for mocking. </summary>
+        protected PolicyAssignmentsCreateByIdOperation()
         {
         }
 
-        internal PolicyAssignmentsCreateOperation(OperationsBase operationsBase, Response<PolicyAssignmentData> response)
+        internal PolicyAssignmentsCreateByIdOperation(OperationsBase operationsBase, Response<PolicyAssignmentData> response)
         {
             _operation = new OperationOrResponseInternals<PolicyAssignment>(Response.FromValue(new PolicyAssignment(operationsBase, response.Value), response.GetRawResponse()));
         }

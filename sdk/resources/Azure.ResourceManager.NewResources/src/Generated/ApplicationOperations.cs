@@ -343,5 +343,10 @@ namespace Azure.ResourceManager.NewResources
                 throw;
             }
         }
+
+        public virtual Pageable<PolicyAssignment> ListPolicyAssignment(string filter = null, CancellationToken cancellationToken = default)
+        {
+            return GetPolicyAssignmentContainer().ListAtScope(Id, filter, cancellationToken);
+        }
     }
 }

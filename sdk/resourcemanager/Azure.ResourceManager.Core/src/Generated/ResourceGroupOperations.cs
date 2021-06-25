@@ -963,5 +963,60 @@ namespace Azure.ResourceManager.Core
         {
             return func(BaseUri, Credential, ClientOptions, Pipeline);
         }
+
+        #region PolicyAssignment
+
+        /// <summary> Lists the PolicyAssignment for this Azure.ResourceManager.Core.ResourceGroupOperations. </summary>
+        /// <param name="filter"> The filter to apply on the operation. Valid values for $filter are: &apos;atScope()&apos; or &apos;policyDefinitionId eq &apos;{value}&apos;&apos;. If $filter is not provided, no filtering is performed. </param>
+        /// <param name="cancellationToken"> The cancellation token to use. </param>
+        /// <return> A collection of resource operations that may take multiple service requests to iterate over. </return>
+        public virtual Pageable<PolicyAssignment> ListPolicyAssignment(string filter = null, CancellationToken cancellationToken = default)
+        {
+            return GetPolicyAssignmentContainer().ListAtScope(Id, filter, cancellationToken);
+        }
+
+        /// <summary> Lists the PolicyAssignment for this Azure.ResourceManager.Core.ResourceGroupOperations. </summary>
+        /// <param name="filter"> The filter to apply on the operation. Valid values for $filter are: &apos;atScope()&apos; or &apos;policyDefinitionId eq &apos;{value}&apos;&apos;. If $filter is not provided, no filtering is performed. </param>
+        /// <param name="cancellationToken"> The cancellation token to use. </param>
+        /// <return> A collection of resource operations that may take multiple service requests to iterate over. </return>
+        public virtual AsyncPageable<PolicyAssignment> ListPolicyAssignmentAsync(string filter = null, CancellationToken cancellationToken = default)
+        {
+            return GetPolicyAssignmentContainer().ListAtScopeAsync(Id, filter, cancellationToken);
+        }
+
+        /// <summary> The operation to create or update a PolicyAssignment. Please note some properties can be set only during creation. </summary>
+        /// <param name="policyAssignmentName"> The name of the policy assignment. </param>
+        /// <param name="parameters"> Parameters for the policy assignment. </param>
+        /// <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="CancellationToken.None" />. </param>
+        public virtual Response<PolicyAssignment> CreateOrUpdatePolicyAssignment(string policyAssignmentName, PolicyAssignmentData parameters, CancellationToken cancellationToken = default)
+        {
+            return GetPolicyAssignmentContainer().CreateOrUpdateAtScope(Id, policyAssignmentName, parameters, cancellationToken);
+        }
+
+        /// <summary> The operation to create or update a PolicyAssignment. Please note some properties can be set only during creation. </summary>
+        /// <param name="policyAssignmentName"> The name of the policy assignment. </param>
+        /// <param name="parameters"> Parameters for the policy assignment. </param>
+        /// <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="CancellationToken.None" />. </param>
+        public virtual Task<Response<PolicyAssignment>> CreateOrUpdatePolicyAssignmentAsync(string policyAssignmentName, PolicyAssignmentData parameters, CancellationToken cancellationToken = default)
+        {
+            return GetPolicyAssignmentContainer().CreateOrUpdateAtScopeAsync(Id, policyAssignmentName, parameters, cancellationToken);
+        }
+
+        /// <inheritdoc />
+        /// <param name="policyAssignmentName"> The name of the policy assignment to get. </param>
+        /// <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="CancellationToken.None" />. </param>
+        public virtual Response<PolicyAssignment> GetPolicyAssignment(string policyAssignmentName, CancellationToken cancellationToken = default)
+        {
+            return GetPolicyAssignmentContainer().GetAtScope(Id, policyAssignmentName, cancellationToken);
+        }
+
+        /// <inheritdoc />
+        /// <param name="policyAssignmentName"> The name of the policy assignment to get. </param>
+        /// <param name="cancellationToken"> A token to allow the caller to cancel the call to the service. The default value is <see cref="CancellationToken.None" />. </param>
+        public virtual Task<Response<PolicyAssignment>> GetPolicyAssignmentAsync(string policyAssignmentName, CancellationToken cancellationToken = default)
+        {
+            return GetPolicyAssignmentContainer().GetAtScopeAsync(Id, policyAssignmentName, cancellationToken);
+        }
+        #endregion
     }
 }

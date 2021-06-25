@@ -8,7 +8,7 @@
 using System.Collections.Generic;
 using Azure.Core;
 
-namespace Azure.ResourceManager.NewResources
+namespace Azure.ResourceManager.Core
 {
     /// <summary> List of policy assignments. </summary>
     internal partial class PolicyAssignmentListResult

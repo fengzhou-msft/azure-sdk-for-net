@@ -13,7 +13,7 @@ using Azure;
 using Azure.Core;
 using Azure.Core.Pipeline;
 
-namespace Azure.ResourceManager.NewResources
+namespace Azure.ResourceManager.Core
 {
     internal partial class PolicyAssignmentsRestOperations
     {

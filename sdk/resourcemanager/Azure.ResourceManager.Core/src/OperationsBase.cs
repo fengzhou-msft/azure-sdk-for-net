@@ -80,6 +80,16 @@ namespace Azure.ResourceManager.Core
         /// <returns> A valid Azure resource type. </returns>
         protected abstract ResourceType ValidResourceType { get; }
 
+        private PolicyAssignmentContainer _policyAssignmentContainer;
+
+        /// <summary>
+        /// Gets the PolicyAssignmentContainer.
+        /// </summary>
+        protected internal PolicyAssignmentContainer GetPolicyAssignmentContainer()
+        {
+            return _policyAssignmentContainer ??= new PolicyAssignmentContainer(ClientOptions, Credential, BaseUri, Pipeline);
+        }
+
         /// <summary>
         /// Gets the resource client.
         /// </summary>

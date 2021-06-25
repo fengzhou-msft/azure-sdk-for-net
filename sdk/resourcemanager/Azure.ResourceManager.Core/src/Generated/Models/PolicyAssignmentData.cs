@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using Azure.Core;
 using Azure.ResourceManager.Core;
 
-namespace Azure.ResourceManager.NewResources
+namespace Azure.ResourceManager.Core
 {
     /// <summary> A class representing the PolicyAssignment data model. </summary>
     public partial class PolicyAssignmentData : Resource<TenantResourceIdentifier>

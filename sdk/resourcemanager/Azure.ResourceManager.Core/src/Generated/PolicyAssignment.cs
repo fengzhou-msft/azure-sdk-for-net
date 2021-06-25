@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Azure.ResourceManager.Core;
 
-namespace Azure.ResourceManager.NewResources
+namespace Azure.ResourceManager.Core
 {
     /// <summary> A Class representing a PolicyAssignment along with the instance operations that can be performed on it. </summary>
     public class PolicyAssignment : PolicyAssignmentOperations
