@@ -133,5 +133,13 @@ namespace Azure.ResourceManager.Core
         {
             return new PolicyAssignmentContainer(this);
         }
+
+        /// <summary>
+        /// Gets a PolicyExemptionContainer.
+        /// </summary>
+        public PolicyExemptionContainer GetPolicyExemptions()
+        {
+            return new PolicyExemptionContainer(this);
+        }
     }
 }
