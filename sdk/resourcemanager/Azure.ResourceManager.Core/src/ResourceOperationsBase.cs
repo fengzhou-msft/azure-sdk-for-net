@@ -129,7 +129,7 @@ namespace Azure.ResourceManager.Core
         /// <summary>
         /// Gets a PolicyAssignmentContainer.
         /// </summary>
-        public PolicyAssignmentContainer GetPolicyAssignments()
+        public virtual PolicyAssignmentContainer GetPolicyAssignments()
         {
             return new PolicyAssignmentContainer(this);
         }
@@ -137,9 +137,17 @@ namespace Azure.ResourceManager.Core
         /// <summary>
         /// Gets a PolicyExemptionContainer.
         /// </summary>
-        public PolicyExemptionContainer GetPolicyExemptions()
+        public virtual PolicyExemptionContainer GetPolicyExemptions()
         {
             return new PolicyExemptionContainer(this);
+        }
+
+        /// <summary>
+        /// Gets a ManagementLockObjectContainer.
+        /// </summary>
+        public virtual ManagementLockObjectContainer GetManagementLocks()
+        {
+            return new ManagementLockObjectContainer(this);
         }
     }
 }
