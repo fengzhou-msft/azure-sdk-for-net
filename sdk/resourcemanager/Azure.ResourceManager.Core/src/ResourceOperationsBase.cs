@@ -127,27 +127,39 @@ namespace Azure.ResourceManager.Core
         }
 
         /// <summary>
-        /// Gets a PolicyAssignmentContainer.
+        /// Gets a PolicyAssignment container.
         /// </summary>
+        /// <returns> The PolicyAssignment container. </returns>
         public virtual PolicyAssignmentContainer GetPolicyAssignments()
         {
             return new PolicyAssignmentContainer(this);
         }
 
         /// <summary>
-        /// Gets a PolicyExemptionContainer.
+        /// Gets a PolicyExemption container.
         /// </summary>
+        /// <returns> The PolicyExemption container. </returns>
         public virtual PolicyExemptionContainer GetPolicyExemptions()
         {
             return new PolicyExemptionContainer(this);
         }
 
         /// <summary>
-        /// Gets a ManagementLockObjectContainer.
+        /// Gets a ManagementLock container.
         /// </summary>
+        /// <returns> The ManagementLock container. </returns>
         public virtual ManagementLockObjectContainer GetManagementLocks()
         {
             return new ManagementLockObjectContainer(this);
+        }
+
+        /// <summary>
+        /// Gets a ResourceLink container.
+        /// </summary>
+        /// <returns> The ResourceLink container. </returns>
+        public virtual ResourceLinkContainer GetResourceLinks()
+        {
+            return new ResourceLinkContainer(this);
         }
     }
 }
