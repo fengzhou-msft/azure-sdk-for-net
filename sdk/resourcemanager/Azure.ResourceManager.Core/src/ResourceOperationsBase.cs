@@ -125,5 +125,13 @@ namespace Azure.ResourceManager.Core
                 throw new InvalidOperationException($"{resourceType.Type} not found for {resourceType.Type}");
             return theResource.Locations.Select(l => (Location)l);
         }
+
+        /// <summary>
+        /// Gets a PolicyAssignmentContainer.
+        /// </summary>
+        public PolicyAssignmentContainer GetPolicyAssignments()
+        {
+            return new PolicyAssignmentContainer(this);
+        }
     }
 }
