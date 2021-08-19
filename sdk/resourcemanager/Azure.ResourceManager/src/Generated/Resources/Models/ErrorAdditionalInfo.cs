@@ -8,16 +8,19 @@
 namespace Azure.ResourceManager.Resources.Models
 {
     /// <summary> The resource management error additional info. </summary>
+    [PropertyReferenceType]
     public partial class ErrorAdditionalInfo
     {
         /// <summary> Initializes a new instance of ErrorAdditionalInfo. </summary>
-        internal ErrorAdditionalInfo()
+        [InitializationConstructor]
+        public ErrorAdditionalInfo()
         {
         }
 
         /// <summary> Initializes a new instance of ErrorAdditionalInfo. </summary>
         /// <param name="type"> The additional info type. </param>
         /// <param name="info"> The additional info. </param>
+        [SerializationConstructor]
         internal ErrorAdditionalInfo(string type, object info)
         {
             Type = type;

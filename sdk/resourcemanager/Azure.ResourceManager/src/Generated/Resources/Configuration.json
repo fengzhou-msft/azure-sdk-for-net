@@ -1,0 +1,14 @@
+{
+  "OutputFolder": ".",
+  "Namespace": "Azure.ResourceManager.Resources",
+  "LibraryName": null,
+  "SharedSourceFolders": [
+    "..\\..\\..\\..\\..\\..\\..\\..\\.autorest\\@autorest_csharp@3.0.0-beta.20210818.2\\node_modules\\@autorest\\csharp\\Generator.Shared",
+    "..\\..\\..\\..\\..\\..\\..\\..\\.autorest\\@autorest_csharp@3.0.0-beta.20210818.2\\node_modules\\@autorest\\csharp\\Azure.Core.Shared"
+  ],
+  "azure-arm": true,
+  "public-clients": true,
+  "head-as-boolean": true,
+  "skip-csproj-packagereference": true,
+  "ArmCore": true
+}
