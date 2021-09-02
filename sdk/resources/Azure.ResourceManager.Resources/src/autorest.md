@@ -5,10 +5,10 @@ Run `dotnet build /t:GenerateCode` to generate code.
 ``` yaml
 azure-arm: true
 library-name: Resources
-c-sharp: true
+use: $(this-folder)/../../../../../autorest.csharp/artifacts/bin/AutoRest.CSharp/Debug/netcoreapp3.1/
 namespace: Azure.ResourceManager.Resources
 title: ResourceManagementClient
-tag: package-track2-preview
+tag: package-track2-preview-2021-05
 
 output-folder: Generated/
 clear-output-folder: true
@@ -117,4 +117,16 @@ input-file:
     - https://raw.githubusercontent.com/Azure/azure-rest-api-specs/91ac14531f0d05b3d6fcf4a817ea0defde59fe63/specification/resources/resource-manager/Microsoft.Resources/stable/2021-04-01/resources.json
     - https://raw.githubusercontent.com/Azure/azure-rest-api-specs/91ac14531f0d05b3d6fcf4a817ea0defde59fe63/specification/resources/resource-manager/Microsoft.Solutions/stable/2019-07-01/managedapplications.json
     - https://raw.githubusercontent.com/Azure/azure-rest-api-specs/91ac14531f0d05b3d6fcf4a817ea0defde59fe63/specification/resources/resource-manager/Microsoft.Resources/stable/2020-10-01/deploymentScripts.json
+```
+
+### Tag: package-track2-preview-2021-05
+
+These settings apply only when `--tag=package-track2-preview-2021-05` is specified on the command line.
+
+```yaml $(tag) == 'package-track2-preview-2021-05'
+input-file:
+    - https://raw.githubusercontent.com/Azure/azure-rest-api-specs/20a98a8408336d47697562f4cdad451f1d0216bf/specification/resources/resource-manager/Microsoft.Resources/stable/2021-04-01/resources.json
+    - https://raw.githubusercontent.com/Azure/azure-rest-api-specs/20a98a8408336d47697562f4cdad451f1d0216bf/specification/resources/resource-manager/Microsoft.Solutions/stable/2019-07-01/managedapplications.json
+    - https://raw.githubusercontent.com/Azure/azure-rest-api-specs/20a98a8408336d47697562f4cdad451f1d0216bf/specification/resources/resource-manager/Microsoft.Resources/stable/2020-10-01/deploymentScripts.json
+    - https://raw.githubusercontent.com/Azure/azure-rest-api-specs/20a98a8408336d47697562f4cdad451f1d0216bf/specification/resources/resource-manager/Microsoft.Resources/stable/2021-05-01/templateSpecs.json
 ```
