@@ -111,16 +111,18 @@ namespace Azure.ResourceManager
             ClientOptions = options.Clone();
 
             _tenant = new Tenant(ClientOptions, Credential, BaseUri, Pipeline);
-            DefaultSubscription = string.IsNullOrWhiteSpace(defaultSubscriptionId)
-                ? GetDefaultSubscription()
-                : GetSubscriptions().Get(defaultSubscriptionId);
+            if (!string.IsNullOrWhiteSpace(defaultSubscriptionId))
+                _defaultSubscriptionId = defaultSubscriptionId;
             ClientOptions.ApiVersions.SetProviderClient(this);
         }
 
+        private string _defaultSubscriptionId;
+
+        private Subscription _defaultSubscription;
         /// <summary>
         /// Gets the default Azure subscription.
         /// </summary>
-        public virtual Subscription DefaultSubscription { get; private set; }
+        public Subscription DefaultSubscription => _defaultSubscription == null ? GetDefaultSubscription(_defaultSubscriptionId) : _defaultSubscription;
 
         /// <summary>
         /// Gets the Azure Resource Manager client options.
@@ -172,9 +174,19 @@ namespace Azure.ResourceManager
         /// </summary>
         /// <param name="id"> The id of the subscription. </param>
         /// <returns> Resource operations of the subscription. </returns>
-        public virtual Subscription GetSubscription(ResourceIdentifier id)
+        public virtual Subscription GetSubscription(string id)
         {
-            return new Subscription(new ClientContext(ClientOptions, Credential, BaseUri, Pipeline), id);
+            ResourceIdentifier subscriptionId;
+            try
+            {
+                subscriptionId = id;
+            }
+            catch (Exception)
+            {
+                subscriptionId = $"/subscriptions/{id}";
+            }
+
+            return new Subscription(new ClientContext(ClientOptions, Credential, BaseUri, Pipeline), subscriptionId);
         }
 
         /// <summary>
@@ -207,11 +219,13 @@ namespace Azure.ResourceManager
             return new PredefinedTag(new ClientContext(ClientOptions, Credential, BaseUri, Pipeline), id);
         }
 
-        private Subscription GetDefaultSubscription()
+        private Subscription GetDefaultSubscription(string subscriptionId = null)
         {
-            var sub = GetSubscriptions().GetAll().FirstOrDefault();
+            var subs = GetSubscriptions().GetAll();
+            var sub = string.IsNullOrWhiteSpace(subscriptionId) ? subs.FirstOrDefault() : subs.Where(s => s.Data.SubscriptionGuid == subscriptionId).FirstOrDefault();
             if (sub is null)
                 throw new Exception("No subscriptions found for the given credentials");
+            _defaultSubscription = sub;
             return sub;
         }
 
