@@ -25,6 +25,17 @@ directive:
   where: $.parameters.Endpoint
   transform: $.format = "url"
 ```
+### Make enum type as string
+
+``` yaml
+directive:
+- from: swagger-document
+  where: $.definitions.ServicePrincipalCredentialEnum
+  transform: $.type = "string"
+- from: swagger-document
+  where: $.definitions.DynamicsLinkedServiceTypeProperties.properties.servicePrincipalCredentialType
+  transform: $.type = "string"
+```
 
 ### Expose serialization and deserialization methods and internal models
 
