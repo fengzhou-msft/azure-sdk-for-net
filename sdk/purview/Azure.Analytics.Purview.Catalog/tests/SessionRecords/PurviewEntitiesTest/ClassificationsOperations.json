@@ -1,0 +1,207 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/entity/guid/e6d790c3-93b2-4e5c-a5b6-3d711a440f79/classifications",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "Content-Length": "216",
+        "Content-Type": "application/json",
+        "traceparent": "00-c08c5ef4e159744f91d68ed21928d245-39b06c5b2c6dd344-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211025.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "ebf4cdc9186bc92e4681621a5fae45cb",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": "[{\u0022typeName\u0022:\u0022MICROSOFT.FINANCIAL.US.ABA_ROUTING_NUMBER\u0022,\u0022entityGuid\u0022:\u0022e6d790c3-93b2-4e5c-a5b6-3d711a440f79\u0022},{\u0022typeName\u0022:\u0022MICROSOFT.FINANCIAL.CREDIT_CARD_NUMBER\u0022,\u0022entityGuid\u0022:\u0022e6d790c3-93b2-4e5c-a5b6-3d711a440f79\u0022}]",
+      "StatusCode": 204,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 25 Oct 2021 08:55:27 GMT",
+        "Expires": "0",
+        "lastmodifiedts": "31",
+        "Pragma": "no-cache",
+        "requestid": "8c4a3480-514b-45d9-a7ca-99a45c7c611e",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "1d26eb6e-498e-449c-8d5c-6e13c6e82ba5",
+        "x-ms-request-id": "ebf4cdc9186bc92e4681621a5fae45cb",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": []
+    },
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/entity/guid/e6d790c3-93b2-4e5c-a5b6-3d711a440f79/classifications",
+      "RequestMethod": "PUT",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "Content-Length": "134",
+        "Content-Type": "application/json",
+        "traceparent": "00-00b72ec629be8840a8e184da6044db23-7f55d4e265aa4045-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211025.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "9ebf5e5dfaaa2df168f13d5f99e96e46",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": "[{\u0022typeName\u0022:\u0022MICROSOFT.FINANCIAL.US.ABA_ROUTING_NUMBER\u0022,\u0022entityGuid\u0022:\u0022e6d790c3-93b2-4e5c-a5b6-3d711a440f79\u0022,\u0022entityStatus\u0022:\u0022ACTIVE\u0022}]",
+      "StatusCode": 204,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 25 Oct 2021 08:55:28 GMT",
+        "Expires": "0",
+        "lastmodifiedts": "32",
+        "Pragma": "no-cache",
+        "requestid": "0945fbea-6205-4bda-98e7-8adaae058d32",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "3bb9cc07-81f5-4d5f-a82a-2c15edb2fcdb",
+        "x-ms-request-id": "9ebf5e5dfaaa2df168f13d5f99e96e46",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": []
+    },
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/entity/uniqueAttribute/type/aws_s3_v2_object/classifications?attr:qualifiedName=s3%3A%2F%2Ftestpurview%2Flocalcsvfile.csv",
+      "RequestMethod": "PUT",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "Content-Length": "110",
+        "Content-Type": "application/json",
+        "traceparent": "00-a320ee9a60c386469318b06c9175fa91-cdea2faa47115f4b-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211025.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "8ae7d57566fe1442f2cec790f6f7007e",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": "[{\u0022typeName\u0022:\u0022MICROSOFT.FINANCIAL.US.ABA_ROUTING_NUMBER\u0022,\u0022entityGuid\u0022:\u0022e6d790c3-93b2-4e5c-a5b6-3d711a440f79\u0022}]",
+      "StatusCode": 204,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 25 Oct 2021 08:55:29 GMT",
+        "Expires": "0",
+        "lastmodifiedts": "33",
+        "Pragma": "no-cache",
+        "requestid": "1b2c6bb9-aa6d-4249-a4c9-a1a6debdf4b2",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "f39e11e2-785d-46e7-ae37-ac0ac2477813",
+        "x-ms-request-id": "8ae7d57566fe1442f2cec790f6f7007e",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": []
+    },
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/entity/guid/e6d790c3-93b2-4e5c-a5b6-3d711a440f79/classifications",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "traceparent": "00-d3fbb0c0fef1704fb3a529031a06d095-5e4fdb31700da347-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211025.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "4934f3e1280ecfd6dcc6827adbce2f5d",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 25 Oct 2021 08:55:30 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "0a972919-cc52-4df9-9e15-3f13de793583",
+        "x-ms-request-id": "4934f3e1280ecfd6dcc6827adbce2f5d",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": {
+        "list": [
+          {
+            "typeName": "Microsoft.Label.9FBDE396_1A24_4C79_8EDF_9254A0F35055",
+            "lastModifiedTS": "1",
+            "entityGuid": "e6d790c3-93b2-4e5c-a5b6-3d711a440f79",
+            "entityStatus": "ACTIVE",
+            "source": "LabelService"
+          },
+          {
+            "typeName": "MICROSOFT.FINANCIAL.US.ABA_ROUTING_NUMBER",
+            "lastModifiedTS": "1",
+            "entityGuid": "e6d790c3-93b2-4e5c-a5b6-3d711a440f79",
+            "entityStatus": "ACTIVE"
+          },
+          {
+            "typeName": "MICROSOFT.FINANCIAL.CREDIT_CARD_NUMBER",
+            "lastModifiedTS": "1",
+            "entityGuid": "e6d790c3-93b2-4e5c-a5b6-3d711a440f79",
+            "entityStatus": "ACTIVE"
+          }
+        ],
+        "startIndex": 0,
+        "pageSize": 3,
+        "totalCount": 3,
+        "sortType": "NONE"
+      }
+    }
+  ],
+  "Variables": {
+    "PURVIEW_ACCOUNT_URL": "https://dotnetllcpurviewaccount.purview.azure.com/",
+    "RandomSeed": "1814923443"
+  }
+}

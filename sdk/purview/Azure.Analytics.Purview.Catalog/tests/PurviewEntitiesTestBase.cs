@@ -10,15 +10,15 @@ using Azure.Core.TestFramework;
 
 namespace Azure.Analytics.Purview.Catalog.Tests
 {
-    public class GlossaryClientTestBase : RecordedTestBase<PurviewCatalogTestEnvironment>
+    public class PurviewEntitiesTestBase : RecordedTestBase<PurviewCatalogTestEnvironment>
     {
-        public GlossaryClientTestBase(bool isAsync) : base(isAsync)
+        public PurviewEntitiesTestBase(bool isAsync) : base(isAsync)
         {
         }
-        public GlossaryClientTestBase(bool isAsync, RecordedTestMode mode) : base(isAsync, mode)
+        public PurviewEntitiesTestBase(bool isAsync, RecordedTestMode mode) : base(isAsync, mode)
         {
         }
-        public PurviewGlossaries GetGlossariesClient()
+        public PurviewEntities GetEntitiesClient()
         {
             var httpHandler = new HttpClientHandler();
             httpHandler.ServerCertificateCustomValidationCallback = (_, _, _, _) =>
@@ -27,7 +27,7 @@ namespace Azure.Analytics.Purview.Catalog.Tests
             };
             var options = new PurviewCatalogClientOptions { Transport = new HttpClientTransport(httpHandler) };
             var catalogclient = new PurviewCatalogClient(TestEnvironment.Endpoint, TestEnvironment.Credential, InstrumentClientOptions(options));
-            return InstrumentClient(catalogclient.Glossaries);
+            return InstrumentClient(catalogclient.Entities);
         }
     }
 }

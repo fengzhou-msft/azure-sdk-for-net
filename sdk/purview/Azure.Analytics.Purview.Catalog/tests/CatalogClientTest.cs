@@ -57,6 +57,18 @@ namespace Azure.Analytics.Purview.Catalog.Tests
             JsonElement fetchBodyJson = JsonDocument.Parse(GetContentFromResponse(fetchResponse)).RootElement;
             Assert.AreEqual("sampledata csv", fetchBodyJson.GetProperty("value")[0].GetProperty("queryPlusText").GetString());
         }
+        [RecordedTest]
+        public async Task Browse()
+        {
+            PurviewCatalogClient client = GetCatalogClient();
+            var data = new
+            {
+                entityType = "aws_s3_v2_bucket"
+            };
+            Response fetchResponse = await client.BrowseAsync(RequestContent.Create(data));
+            JsonElement fetchBodyJson = JsonDocument.Parse(GetContentFromResponse(fetchResponse)).RootElement;
+            Assert.AreEqual("aws_s3_v2_bucket", fetchBodyJson.GetProperty("value")[0].GetProperty("entityType").GetString());
+        }
 
         private static BinaryData GetContentFromResponse(Response r)
         {

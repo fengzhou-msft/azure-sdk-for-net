@@ -1,0 +1,108 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/types/structdef/name/fs_permissions",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "traceparent": "00-ce842aac8404024aa4814edce8d02000-f5e6fad6dc042746-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211029.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "fef8635d614b6735503b868d57b72bd5",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 29 Oct 2021 09:08:50 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "2662623f-7a25-4e4e-9c3e-42efcfd1b9ac",
+        "x-ms-request-id": "fef8635d614b6735503b868d57b72bd5",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": {
+        "category": "STRUCT",
+        "guid": "f5e943b6-09dd-d672-a3a5-296546c5c163",
+        "createdBy": "admin",
+        "updatedBy": "admin",
+        "createTime": 1615787944125,
+        "updateTime": 1615787944514,
+        "version": 2,
+        "name": "fs_permissions",
+        "description": "fs_permissions",
+        "typeVersion": "1.1",
+        "serviceType": "file_system",
+        "lastModifiedTS": "2",
+        "attributeDefs": [
+          {
+            "name": "group",
+            "typeName": "file_action",
+            "isOptional": false,
+            "cardinality": "SINGLE",
+            "valuesMinCount": 1,
+            "valuesMaxCount": 1,
+            "isUnique": false,
+            "isIndexable": true,
+            "includeInNotification": false
+          },
+          {
+            "name": "user",
+            "typeName": "file_action",
+            "isOptional": false,
+            "cardinality": "SINGLE",
+            "valuesMinCount": 1,
+            "valuesMaxCount": 1,
+            "isUnique": false,
+            "isIndexable": true,
+            "includeInNotification": false
+          },
+          {
+            "name": "sticky",
+            "typeName": "boolean",
+            "isOptional": false,
+            "cardinality": "SINGLE",
+            "valuesMinCount": 1,
+            "valuesMaxCount": 1,
+            "isUnique": false,
+            "isIndexable": true,
+            "includeInNotification": false
+          },
+          {
+            "name": "others",
+            "typeName": "file_action",
+            "isOptional": false,
+            "cardinality": "SINGLE",
+            "valuesMinCount": 1,
+            "valuesMaxCount": 1,
+            "isUnique": false,
+            "isIndexable": true,
+            "includeInNotification": false
+          }
+        ]
+      }
+    }
+  ],
+  "Variables": {
+    "PURVIEW_ACCOUNT_URL": "https://dotnetllcpurviewaccount.purview.azure.com/",
+    "RandomSeed": "927293707"
+  }
+}

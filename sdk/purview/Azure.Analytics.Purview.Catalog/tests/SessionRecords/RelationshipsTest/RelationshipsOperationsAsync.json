@@ -1,0 +1,310 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/relationship",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "Content-Length": "273",
+        "Content-Type": "application/json",
+        "traceparent": "00-8b51e84becfddb4aad0dc051fc0a9c1d-3f25a4980d6edc48-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211028.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "c17d958d38bde9c511244e989b1df5ee",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": {
+        "typeName": "AtlasGlossarySynonym",
+        "attributes": {
+          "description": "Test description"
+        },
+        "end1": {
+          "guid": "aab4d687-59f2-44d8-ae7a-f5d6155a2fb0",
+          "typeName": "AtlasGlossaryTerm"
+        },
+        "end2": {
+          "guid": "8a825468-d64e-4ecf-a416-c03fd9a14762",
+          "typeName": "AtlasGlossaryTerm"
+        },
+        "status": "ACTIVE"
+      },
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 28 Oct 2021 08:23:52 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "721842ad-8590-43ab-bc52-eb5cb7ebca74",
+        "x-ms-cosmosdb-throttle": "0",
+        "x-ms-request-id": "c17d958d38bde9c511244e989b1df5ee",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": {
+        "typeName": "AtlasGlossarySynonym",
+        "attributes": {
+          "expression": null,
+          "steward": null,
+          "description": "Test description",
+          "source": null,
+          "status": null
+        },
+        "lastModifiedTS": "1",
+        "guid": "29404dc2-407f-4aa4-9510-d54106332944",
+        "provenanceType": 0,
+        "end1": {
+          "guid": "aab4d687-59f2-44d8-ae7a-f5d6155a2fb0",
+          "typeName": "AtlasGlossaryTerm",
+          "uniqueAttributes": {
+            "qualifiedName": "test1@Glossary"
+          }
+        },
+        "end2": {
+          "guid": "8a825468-d64e-4ecf-a416-c03fd9a14762",
+          "typeName": "AtlasGlossaryTerm",
+          "uniqueAttributes": {
+            "qualifiedName": "test2@Glossary"
+          }
+        },
+        "label": "r:AtlasGlossarySynonym",
+        "status": "ACTIVE",
+        "createdBy": "6d0fee93-2b74-46dd-a497-e74f724b6125",
+        "updatedBy": "6d0fee93-2b74-46dd-a497-e74f724b6125",
+        "createTime": 1635409433006,
+        "updateTime": 1635409433006,
+        "version": 0,
+        "propagatedClassifications": []
+      }
+    },
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/relationship",
+      "RequestMethod": "PUT",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "Content-Length": "327",
+        "Content-Type": "application/json",
+        "traceparent": "00-3b81c5850af1094da499e463170de2a5-0b59134636cebf48-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211028.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "a7f344e5c2cf19815ee6fe2e28c6221c",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": {
+        "typeName": "AtlasGlossarySynonym",
+        "attributes": {
+          "description": "Updated Test description"
+        },
+        "guid": "29404dc2-407f-4aa4-9510-d54106332944",
+        "end1": {
+          "guid": "aab4d687-59f2-44d8-ae7a-f5d6155a2fb0",
+          "typeName": "AtlasGlossaryTerm"
+        },
+        "end2": {
+          "guid": "8a825468-d64e-4ecf-a416-c03fd9a14762",
+          "typeName": "AtlasGlossaryTerm"
+        },
+        "status": "ACTIVE"
+      },
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 28 Oct 2021 08:23:53 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "d6bdaf70-bd9d-4390-8ba1-56c440be6008",
+        "x-ms-request-id": "a7f344e5c2cf19815ee6fe2e28c6221c",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": {
+        "typeName": "AtlasGlossarySynonym",
+        "attributes": {
+          "expression": null,
+          "steward": null,
+          "description": "Updated Test description",
+          "source": null,
+          "status": null
+        },
+        "lastModifiedTS": "2",
+        "guid": "29404dc2-407f-4aa4-9510-d54106332944",
+        "provenanceType": 0,
+        "end1": {
+          "guid": "aab4d687-59f2-44d8-ae7a-f5d6155a2fb0",
+          "typeName": "AtlasGlossaryTerm",
+          "uniqueAttributes": {
+            "qualifiedName": "test1@Glossary"
+          }
+        },
+        "end2": {
+          "guid": "8a825468-d64e-4ecf-a416-c03fd9a14762",
+          "typeName": "AtlasGlossaryTerm",
+          "uniqueAttributes": {
+            "qualifiedName": "test2@Glossary"
+          }
+        },
+        "label": "r:AtlasGlossarySynonym",
+        "status": "ACTIVE",
+        "createdBy": "6d0fee93-2b74-46dd-a497-e74f724b6125",
+        "updatedBy": "6d0fee93-2b74-46dd-a497-e74f724b6125",
+        "createTime": 1635409433006,
+        "updateTime": 1635409433006,
+        "version": 0,
+        "propagatedClassifications": []
+      }
+    },
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/relationship/guid/29404dc2-407f-4aa4-9510-d54106332944",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "traceparent": "00-4f7c53c912a3dc459e2bdbcc8ecceaf5-114c930c24cd6c4d-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211028.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "456b0cab773f1d9fadbeaa5985b679b8",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 28 Oct 2021 08:23:54 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "2d120605-39e2-4f6c-a6dc-d268bb36541a",
+        "x-ms-request-id": "456b0cab773f1d9fadbeaa5985b679b8",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": {
+        "relationship": {
+          "typeName": "AtlasGlossarySynonym",
+          "attributes": {
+            "expression": null,
+            "steward": null,
+            "description": "Updated Test description",
+            "source": null,
+            "status": null
+          },
+          "lastModifiedTS": "2",
+          "guid": "29404dc2-407f-4aa4-9510-d54106332944",
+          "provenanceType": 0,
+          "end1": {
+            "guid": "aab4d687-59f2-44d8-ae7a-f5d6155a2fb0",
+            "typeName": "AtlasGlossaryTerm",
+            "uniqueAttributes": {
+              "qualifiedName": "test1@Glossary"
+            }
+          },
+          "end2": {
+            "guid": "8a825468-d64e-4ecf-a416-c03fd9a14762",
+            "typeName": "AtlasGlossaryTerm",
+            "uniqueAttributes": {
+              "qualifiedName": "test2@Glossary"
+            }
+          },
+          "label": "r:AtlasGlossarySynonym",
+          "status": "ACTIVE",
+          "createdBy": "6d0fee93-2b74-46dd-a497-e74f724b6125",
+          "updatedBy": "6d0fee93-2b74-46dd-a497-e74f724b6125",
+          "createTime": 1635409433006,
+          "updateTime": 1635409433006,
+          "version": 0,
+          "propagatedClassifications": []
+        }
+      }
+    },
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/relationship/guid/29404dc2-407f-4aa4-9510-d54106332944",
+      "RequestMethod": "DELETE",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "traceparent": "00-c020fb74cb1fd146beee3e9636e2e139-ac441b6b714a0a4f-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211028.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "6ee5432f319ecbae136362d73996c14a",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 204,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 28 Oct 2021 08:23:55 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "requestid": "708b78ff-5437-4b89-b335-c783c05c240c",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "9ba6f103-dc61-4105-9737-85edaed9f0ca",
+        "x-ms-request-id": "6ee5432f319ecbae136362d73996c14a",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": []
+    }
+  ],
+  "Variables": {
+    "PURVIEW_ACCOUNT_URL": "https://dotnetllcpurviewaccount.purview.azure.com/",
+    "RandomSeed": "882576506"
+  }
+}

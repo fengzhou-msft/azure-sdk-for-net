@@ -1,0 +1,79 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/types/relationshipdef/name/mysql_db_views",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "traceparent": "00-f3b0484a22b95e4b911636711263912d-366cb9771d55fd4a-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211029.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "7714b4c1c0bbe5ff78884a585a24e12e",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 29 Oct 2021 09:08:23 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "6d4a498e-6308-4e1b-b83e-acdc046ac1b1",
+        "x-ms-request-id": "7714b4c1c0bbe5ff78884a585a24e12e",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": {
+        "category": "RELATIONSHIP",
+        "guid": "df32d2b1-1ed0-8fb4-c2b3-f45a5ad3b5ab",
+        "createdBy": "admin",
+        "updatedBy": "admin",
+        "createTime": 1631690914528,
+        "updateTime": 1631690914528,
+        "version": 1,
+        "name": "mysql_db_views",
+        "description": "mysql_db_views",
+        "typeVersion": "1.0",
+        "serviceType": "MySQL",
+        "lastModifiedTS": "1",
+        "attributeDefs": [],
+        "relationshipCategory": "COMPOSITION",
+        "propagateTags": "NONE",
+        "endDef1": {
+          "type": "mysql_db",
+          "name": "views",
+          "isContainer": true,
+          "cardinality": "SET",
+          "isLegacyAttribute": false
+        },
+        "endDef2": {
+          "type": "mysql_view",
+          "name": "db",
+          "isContainer": false,
+          "cardinality": "SINGLE",
+          "isLegacyAttribute": false
+        }
+      }
+    }
+  ],
+  "Variables": {
+    "PURVIEW_ACCOUNT_URL": "https://dotnetllcpurviewaccount.purview.azure.com/",
+    "RandomSeed": "764030196"
+  }
+}

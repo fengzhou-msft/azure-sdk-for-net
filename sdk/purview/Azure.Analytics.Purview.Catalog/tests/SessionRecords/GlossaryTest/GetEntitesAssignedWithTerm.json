@@ -1,0 +1,49 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/glossary/terms/26229cd6-0779-4d65-abee-f37a0d610a20/assignedEntities",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "traceparent": "00-b05eebd2e846984fbed2378869d06f57-e8b047ef38e71944-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211029.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "41131aa9b959096c8c68766f1a431404",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 29 Oct 2021 08:58:56 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "29e5517b-e154-4ea4-87b6-e8b46ec1940c",
+        "x-ms-request-id": "41131aa9b959096c8c68766f1a431404",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": "[{\u0022guid\u0022:\u0022bf77965b-b260-43cd-b753-f5d58b362834\u0022,\u0022typeName\u0022:\u0022aws_s3_v2_object\u0022,\u0022entityStatus\u0022:\u0022ACTIVE\u0022,\u0022displayText\u0022:\u0022localcsvfile.csv\u0022,\u0022relationshipType\u0022:\u0022AtlasGlossarySemanticAssignment\u0022,\u0022relationshipGuid\u0022:\u0022f88ad38d-da68-4b3f-978e-0bde8b0fb2ed\u0022,\u0022relationshipStatus\u0022:\u0022ACTIVE\u0022,\u0022relationshipAttributes\u0022:{\u0022typeName\u0022:\u0022AtlasGlossarySemanticAssignment\u0022,\u0022attributes\u0022:{\u0022expression\u0022:null,\u0022createdBy\u0022:null,\u0022steward\u0022:null,\u0022confidence\u0022:null,\u0022description\u0022:null,\u0022source\u0022:null,\u0022status\u0022:null}}}]"
+    }
+  ],
+  "Variables": {
+    "PURVIEW_ACCOUNT_URL": "https://dotnetllcpurviewaccount.purview.azure.com/",
+    "RandomSeed": "1369061419"
+  }
+}

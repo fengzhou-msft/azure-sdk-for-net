@@ -1,0 +1,70 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/entity",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "Content-Length": "220",
+        "Content-Type": "application/json",
+        "traceparent": "00-2782636c9dd2b5478b7212bdaba2b055-94995ebd98cc924d-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211020.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.19043)"
+        ],
+        "x-ms-client-request-id": "70f19b93b25a3195c403641ddf8ff6bd",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": {
+        "entity": {
+          "typeName": "aws_s3_v2_bucket",
+          "attributes": {
+            "qualifiedName": "s3://testpurview",
+            "description": "test-description1020",
+            "accountId": "952454463371",
+            "name": "test-datasource1020",
+            "region": "US West (N. California)"
+          }
+        }
+      },
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Content-Type": "application/json",
+        "Date": "Wed, 20 Oct 2021 01:44:10 GMT",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "afd809ea-4d08-48c3-b55c-4b8969597eec",
+        "x-ms-request-id": "70f19b93b25a3195c403641ddf8ff6bd"
+      },
+      "ResponseBody": {
+        "mutatedEntities": {
+          "CREATE": [
+            {
+              "typeName": "aws_s3_v2_bucket",
+              "attributes": {
+                "qualifiedName": "s3://testpurview"
+              },
+              "lastModifiedTS": "1",
+              "guid": "2b3d955e-9066-4826-835b-2a0d22e3536e"
+            }
+          ]
+        },
+        "guidAssignments": {
+          "-2047844914989": "2b3d955e-9066-4826-835b-2a0d22e3536e"
+        }
+      }
+    }
+  ],
+  "Variables": {
+    "PURVIEW_ACCOUNT_URL": "https://dotnetllcpurviewaccount.purview.azure.com/",
+    "RandomSeed": "545003601",
+    "S3_Account_ID": "952454463371"
+  }
+}
