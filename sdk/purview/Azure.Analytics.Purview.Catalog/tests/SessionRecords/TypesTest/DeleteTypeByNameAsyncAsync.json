@@ -1,0 +1,146 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/types/typedefs",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "Content-Length": "268",
+        "Content-Type": "application/json",
+        "traceparent": "00-19fd42a41717f5449c639740f1dd23f8-98d3fe1b54900247-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211028.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "5a0b9a1e55e237767076978c86792064",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": {
+        "entityDefs": [
+          {
+            "name": "azure_sql_server_example_delete",
+            "superTypes": [
+              "azure_resource"
+            ],
+            "typeVersion": "1.0",
+            "attributeDefs": [
+              {
+                "name": "databases",
+                "typeName": "array\u003Cazure_sql_db\u003E",
+                "cardinality": "SET",
+                "isIndexable": false,
+                "isOptional": true,
+                "isUnique": false
+              }
+            ]
+          }
+        ]
+      },
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Content-Type": "application/json",
+        "Date": "Fri, 29 Oct 2021 06:52:46 GMT",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "e3ce113e-6df4-4596-839d-589fe11b01e0",
+        "x-ms-request-id": "5a0b9a1e55e237767076978c86792064"
+      },
+      "ResponseBody": {
+        "enumDefs": [],
+        "structDefs": [],
+        "classificationDefs": [],
+        "entityDefs": [
+          {
+            "category": "ENTITY",
+            "guid": "ea3fb66d-eda5-80bb-dfaf-6e3d8099df76",
+            "createdBy": "6d0fee93-2b74-46dd-a497-e74f724b6125",
+            "updatedBy": "6d0fee93-2b74-46dd-a497-e74f724b6125",
+            "createTime": 1635490364448,
+            "updateTime": 1635490364448,
+            "version": 1,
+            "name": "azure_sql_server_example_delete",
+            "description": "azure_sql_server_example_delete",
+            "typeVersion": "1.0",
+            "lastModifiedTS": "1",
+            "attributeDefs": [
+              {
+                "name": "databases",
+                "typeName": "array\u003Cazure_sql_db\u003E",
+                "isOptional": true,
+                "cardinality": "SET",
+                "valuesMinCount": 0,
+                "valuesMaxCount": 2147483647,
+                "isUnique": false,
+                "isIndexable": false,
+                "includeInNotification": false
+              }
+            ],
+            "superTypes": [
+              "azure_resource"
+            ],
+            "subTypes": [],
+            "relationshipAttributeDefs": [
+              {
+                "name": "meanings",
+                "typeName": "array\u003CAtlasGlossaryTerm\u003E",
+                "isOptional": true,
+                "cardinality": "SET",
+                "valuesMinCount": -1,
+                "valuesMaxCount": -1,
+                "isUnique": false,
+                "isIndexable": false,
+                "includeInNotification": false,
+                "relationshipTypeName": "AtlasGlossarySemanticAssignment",
+                "isLegacyAttribute": false
+              }
+            ]
+          }
+        ],
+        "relationshipDefs": []
+      }
+    },
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/types/typedef/name/azure_sql_server_example_delete",
+      "RequestMethod": "DELETE",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "traceparent": "00-56f92169bf1f61478df450a41cab79d7-4b63670c6fc1284a-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211028.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "f11cba97a7c0fede3139ef57b9132177",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 204,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Content-Type": "application/json",
+        "Date": "Fri, 29 Oct 2021 06:52:49 GMT",
+        "requestid": "26833715-fa0e-4899-b4e4-aebf684e8c4f",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "a9755213-5ceb-4631-8894-4a5caba20656",
+        "x-ms-request-id": "f11cba97a7c0fede3139ef57b9132177"
+      },
+      "ResponseBody": []
+    }
+  ],
+  "Variables": {
+    "PURVIEW_ACCOUNT_URL": "https://dotnetllcpurviewaccount.purview.azure.com/",
+    "RandomSeed": "1620546942"
+  }
+}

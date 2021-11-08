@@ -1,0 +1,51 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/glossary/terms/26229cd6-0779-4d65-abee-f37a0d610a20/assignedEntities",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "Content-Length": "49",
+        "Content-Type": "application/json",
+        "traceparent": "00-5b9daa68b21e4b47b8604fadd5fead8f-e7a0a37502df644a-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211029.1",
+          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "5964756c7a1007652de0f9821fee7da7",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": "[{\u0022guid\u0022:\u0022bf77965b-b260-43cd-b753-f5d58b362834\u0022}]",
+      "StatusCode": 204,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 29 Oct 2021 08:58:28 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "requestid": "9463a713-9b07-4ea0-bb49-f6e0c86759bc",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "aa7fd786-0eba-438b-a456-c480682ba8f5",
+        "x-ms-request-id": "5964756c7a1007652de0f9821fee7da7",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": []
+    }
+  ],
+  "Variables": {
+    "PURVIEW_ACCOUNT_URL": "https://dotnetllcpurviewaccount.purview.azure.com/",
+    "RandomSeed": "202191434"
+  }
+}

@@ -12,5 +12,7 @@ namespace Azure.Analytics.Purview.Catalog.Tests
         {
         }
         public Uri Endpoint => new(GetRecordedVariable("PURVIEW_ACCOUNT_URL"));
+
+        public string S3AccountID => GetRecordedVariable("S3_Account_ID");
     }
 }
