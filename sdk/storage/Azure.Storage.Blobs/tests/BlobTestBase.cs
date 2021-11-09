@@ -28,6 +28,7 @@ namespace Azure.Storage.Test.Shared
         BlobClientOptions.ServiceVersion.V2020_08_04,
         BlobClientOptions.ServiceVersion.V2020_10_02,
         BlobClientOptions.ServiceVersion.V2020_12_06,
+        BlobClientOptions.ServiceVersion.V2021_02_12,
         StorageVersionExtensions.LatestVersion,
         StorageVersionExtensions.MaxVersion,
         RecordingServiceVersion = StorageVersionExtensions.MaxVersion,
@@ -455,7 +456,7 @@ namespace Azure.Storage.Test.Shared
             if (match == ReceivedETag)
             {
                 Response<BlobProperties> headers = await blob.GetPropertiesAsync();
-                return headers.Value.ETag.ToString();
+                return headers.GetRawResponse().Headers.ETag.ToString();
             }
             else
             {

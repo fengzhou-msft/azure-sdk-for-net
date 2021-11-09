@@ -27,6 +27,7 @@ namespace Azure.Storage.Files.DataLake.Tests
         DataLakeClientOptions.ServiceVersion.V2020_08_04,
         DataLakeClientOptions.ServiceVersion.V2020_10_02,
         DataLakeClientOptions.ServiceVersion.V2020_12_06,
+        DataLakeClientOptions.ServiceVersion.V2021_02_12,
         StorageVersionExtensions.LatestVersion,
         StorageVersionExtensions.MaxVersion,
         RecordingServiceVersion = StorageVersionExtensions.MaxVersion,
@@ -326,7 +327,7 @@ namespace Azure.Storage.Files.DataLake.Tests
             if (match == ReceivedETag)
             {
                 Response<PathProperties> headers = await path.GetPropertiesAsync();
-                return headers.Value.ETag.ToString();
+                return headers.GetRawResponse().Headers.ETag.ToString();
             }
             else
             {

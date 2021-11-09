@@ -57,6 +57,7 @@ namespace Azure.Analytics.Purview.Catalog.Tests
             JsonElement fetchBodyJson = JsonDocument.Parse(GetContentFromResponse(fetchResponse)).RootElement;
             Assert.AreEqual("sampledata csv", fetchBodyJson.GetProperty("value")[0].GetProperty("queryPlusText").GetString());
         }
+
         [RecordedTest]
         public async Task Browse()
         {
