@@ -1,17 +1,17 @@
 {
   "Entries": [
     {
-      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/lineage/26fff2b7-bb60-4443-ad26-47d466de2f45?depth=0\u0026direction=INPUT",
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/glossary/name/Glossary/terms?api-version=2021-05-01-preview",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": "application/json",
         "Authorization": "Sanitized",
-        "traceparent": "00-2fd900a787bbce4988f5afe767b66b62-20d33aa0b93cb34f-00",
+        "traceparent": "00-a01a6e3baa5be446a083de89d9d1e748-b85d1b9f4e74fa40-00",
         "User-Agent": [
           "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211111.1",
           "(.NET Core 3.1.21; Microsoft Windows 10.0.22000)"
         ],
-        "x-ms-client-request-id": "a6afbba08ae38381ce2be39c3aca7a9f",
+        "x-ms-client-request-id": "196502ec903d8b23dd50840695a2a63a",
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": null,
@@ -24,7 +24,7 @@
         "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
         "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Thu, 11 Nov 2021 07:31:59 GMT",
+        "Date": "Thu, 11 Nov 2021 03:23:42 GMT",
         "Expires": "0",
         "Pragma": "no-cache",
         "Server": "AzurePurview",
@@ -35,28 +35,15 @@
           "nosniff"
         ],
         "X-Frame-Options": "DENY",
-        "x-ms-correlation-request-id": "116940a4-b315-43c2-b4c6-1394cbdb9219",
-        "x-ms-request-id": "a6afbba08ae38381ce2be39c3aca7a9f",
+        "x-ms-correlation-request-id": "73f67b8b-da9d-40a5-b0fb-a56289c201f8",
+        "x-ms-request-id": "196502ec903d8b23dd50840695a2a63a",
         "x-xss-protection": "1; mode=block"
       },
-      "ResponseBody": {
-        "baseEntityGuid": "26fff2b7-bb60-4443-ad26-47d466de2f45",
-        "lineageDirection": "INPUT",
-        "lineageDepth": 0,
-        "lineageWidth": 10,
-        "childrenCount": -1,
-        "guidEntityMap": {},
-        "includeParent": false,
-        "relations": [],
-        "parentRelations": [],
-        "widthCounts": {
-          "INPUT": {}
-        }
-      }
+      "ResponseBody": "[{\u0022createTime\u0022:1636599955699,\u0022qualifiedName\u0022:\u0022test@Glossary\u0022,\u0022name\u0022:\u0022test\u0022,\u0022updateTime\u0022:1636600231207,\u0022guid\u0022:\u0022dc1e6399-022c-4559-866e-1638cb84ab91\u0022,\u0022status\u0022:\u0022Approved\u0022,\u0022templateName\u0022:[],\u0022shortDescription\u0022:null,\u0022longDescription\u0022:null},{\u0022createTime\u0022:1636600220984,\u0022qualifiedName\u0022:\u0022test_test2@Glossary\u0022,\u0022name\u0022:\u0022test_test2\u0022,\u0022updateTime\u0022:1636600370072,\u0022guid\u0022:\u00221736c1f2-c072-4fee-99a1-eb47d156bb12\u0022,\u0022status\u0022:\u0022Approved\u0022,\u0022templateName\u0022:[],\u0022shortDescription\u0022:null,\u0022longDescription\u0022:null}]"
     }
   ],
   "Variables": {
     "PURVIEW_ACCOUNT_URL": "https://dotnetllcpurviewaccount.purview.azure.com/",
-    "RandomSeed": "31091141"
+    "RandomSeed": "1027758088"
   }
 }

@@ -299,7 +299,7 @@ namespace Azure.Analytics.Purview.Catalog.Tests
         public async Task GetTypeDefinitionHeaders()
         {
             var client = GetTypesClient();
-            Response fetchResponse = await client.GetTypeDefinitionHeadersAsync(new(), true);
+            Response fetchResponse = await client.GetTypeDefinitionHeadersAsync();
             Assert.AreEqual(200, fetchResponse.Status);
             JsonElement fetchBodyJson = JsonDocument.Parse(GetContentFromResponse(fetchResponse)).RootElement;
             Assert.GreaterOrEqual(fetchBodyJson.GetArrayLength(),1);

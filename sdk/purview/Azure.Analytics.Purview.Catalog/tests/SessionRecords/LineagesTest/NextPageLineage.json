@@ -1,15 +1,15 @@
 {
   "Entries": [
     {
-      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/lineage/b88ba3c5-ae50-4803-809e-a783cbdcbf1a/next/?direction=OUTPUT\u0026api-version=2021-05-01-preview",
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/lineage/26fff2b7-bb60-4443-ad26-47d466de2f45/next/?direction=OUTPUT\u0026getDerivedLineage=false\u0026api-version=2021-05-01-preview",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": "application/json",
         "Authorization": "Sanitized",
-        "traceparent": "00-8b08cc16dd32f6448f48f0c75a06902c-6947d335df3e1049-00",
+        "traceparent": "00-e127afbbcb009748b30a547c1589e320-d46dce3d15337149-00",
         "User-Agent": [
-          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211028.1",
-          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211111.1",
+          "(.NET Core 3.1.21; Microsoft Windows 10.0.22000)"
         ],
         "x-ms-client-request-id": "70d77173643049e8304a7c8025df5ccd",
         "x-ms-return-client-request-id": "true"
@@ -24,23 +24,23 @@
         "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
         "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Thu, 28 Oct 2021 07:40:15 GMT",
+        "Date": "Thu, 11 Nov 2021 07:31:52 GMT",
         "Expires": "0",
         "Pragma": "no-cache",
         "Server": "AzurePurview",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "Transfer-Encoding": "chunked",
         "X-Content-Type-Options": [
           "nosniff",
           "nosniff"
         ],
         "X-Frame-Options": "DENY",
-        "x-ms-correlation-request-id": "ca4800c6-2933-4996-b098-0d4fb5765876",
+        "x-ms-correlation-request-id": "edcbcc31-d4d9-4e44-ac0c-b9d26d4a3c4f",
         "x-ms-request-id": "70d77173643049e8304a7c8025df5ccd",
         "x-xss-protection": "1; mode=block"
       },
       "ResponseBody": {
-        "baseEntityGuid": "b88ba3c5-ae50-4803-809e-a783cbdcbf1a",
+        "baseEntityGuid": "26fff2b7-bb60-4443-ad26-47d466de2f45",
         "lineageDirection": "OUTPUT",
         "lineageDepth": 1,
         "lineageWidth": 10,

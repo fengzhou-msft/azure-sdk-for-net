@@ -1,15 +1,15 @@
 {
   "Entries": [
     {
-      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/lineage/b88ba3c5-ae50-4803-809e-a783cbdcbf1a?direction=INPUT",
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/lineage/26fff2b7-bb60-4443-ad26-47d466de2f45?depth=0\u0026direction=INPUT",
       "RequestMethod": "GET",
       "RequestHeaders": {
         "Accept": "application/json",
         "Authorization": "Sanitized",
-        "traceparent": "00-b131cb5bd4b9864a8db06a0acb885948-37d6d7660488b54b-00",
+        "traceparent": "00-5cc35219ed1b3e438c71ef1e4e79020c-4bdd5fa27dadc442-00",
         "User-Agent": [
-          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211028.1",
-          "(.NET Core 3.1.20; Microsoft Windows 10.0.22000)"
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211111.1",
+          "(.NET Core 3.1.21; Microsoft Windows 10.0.22000)"
         ],
         "x-ms-client-request-id": "cfcbabd1e346301cbff224117b0e712d",
         "x-ms-return-client-request-id": "true"
@@ -24,25 +24,25 @@
         "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
         "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Thu, 28 Oct 2021 07:40:13 GMT",
+        "Date": "Thu, 11 Nov 2021 07:31:39 GMT",
         "Expires": "0",
         "Pragma": "no-cache",
         "Server": "AzurePurview",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "Transfer-Encoding": "chunked",
         "X-Content-Type-Options": [
           "nosniff",
           "nosniff"
         ],
         "X-Frame-Options": "DENY",
-        "x-ms-correlation-request-id": "7d158fc6-9288-4a86-b109-1eaa41e7ac6e",
+        "x-ms-correlation-request-id": "61b02d8d-4004-4d62-a593-68ee4290354c",
         "x-ms-request-id": "cfcbabd1e346301cbff224117b0e712d",
         "x-xss-protection": "1; mode=block"
       },
       "ResponseBody": {
-        "baseEntityGuid": "b88ba3c5-ae50-4803-809e-a783cbdcbf1a",
+        "baseEntityGuid": "26fff2b7-bb60-4443-ad26-47d466de2f45",
         "lineageDirection": "INPUT",
-        "lineageDepth": 3,
+        "lineageDepth": 0,
         "lineageWidth": 10,
         "childrenCount": -1,
         "guidEntityMap": {},

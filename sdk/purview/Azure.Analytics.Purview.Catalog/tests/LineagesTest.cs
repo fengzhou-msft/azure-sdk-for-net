@@ -20,7 +20,7 @@ namespace Azure.Analytics.Purview.Catalog.Tests
         [RecordedTest]
         public async Task GetLineageGraph()
         {
-            string guid = "b88ba3c5-ae50-4803-809e-a783cbdcbf1a";
+            string guid = "26fff2b7-bb60-4443-ad26-47d466de2f45";
             var client = GetLineagesClient();
             Response fetchResponse = await client.GetLineageGraphAsync(guid, "INPUT",new());
             Assert.AreEqual(200, fetchResponse.Status);
@@ -30,7 +30,7 @@ namespace Azure.Analytics.Purview.Catalog.Tests
         [RecordedTest]
         public async Task NextPageLineage()
         {
-            string guid = "b88ba3c5-ae50-4803-809e-a783cbdcbf1a";
+            string guid = "26fff2b7-bb60-4443-ad26-47d466de2f45";
             var client = GetLineagesClient();
             Response fetchResponse = await client.NextPageLineageAsync(guid, "OUTPUT", new());
             Assert.AreEqual(200, fetchResponse.Status);
