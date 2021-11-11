@@ -1,0 +1,139 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/entity/guid/26fff2b7-bb60-4443-ad26-47d466de2f45?minExtInfo=false",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "traceparent": "00-6513d39587b334419c4c1bba484a7a4f-c0b4814f29cb244a-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211111.1",
+          "(.NET Core 3.1.21; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "90c63ffdc85f0c1c1b816b2b44f5ab40",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 11 Nov 2021 07:35:03 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "94ae749c-5986-4783-be08-89634d88a033",
+        "x-ms-request-id": "90c63ffdc85f0c1c1b816b2b44f5ab40",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": {
+        "referredEntities": {},
+        "entity": {
+          "typeName": "aws_s3_v2_object",
+          "attributes": {
+            "owner": null,
+            "bucketName": "testpurview",
+            "lastModifiedTime": 1632715317000,
+            "replicatedTo": null,
+            "replicatedFrom": null,
+            "qualifiedName": "s3://testpurview/taxi-tip-data.csv",
+            "dataType": null,
+            "description": null,
+            "compressionType": null,
+            "ownerId": null,
+            "storageClass": null,
+            "ownerName": null,
+            "encryption": "",
+            "size": 72343,
+            "name": "taxi-tip-data.csv",
+            "eTag": null,
+            "region": "US West (N. California)",
+            "awsTags": []
+          },
+          "lastModifiedTS": "5",
+          "guid": "26fff2b7-bb60-4443-ad26-47d466de2f45",
+          "status": "ACTIVE",
+          "createdBy": "ServiceAdmin",
+          "updatedBy": "9f78dd23-f3c4-450f-84af-d9bd0a224f0b",
+          "createTime": 1636615053650,
+          "updateTime": 1636615811607,
+          "version": 0,
+          "sourceDetails": {
+            "ScanResourceId": "datasources/AmazonS3-z6s/scans/Scan-7Ny",
+            "ScanLastModifiedAt": "2021-11-11T07:04:33.3480603Z",
+            "ScanRuleSetResourceId": "scanrulesets/AmazonS3",
+            "ScanRuleSetLastModifiedAt": "2021-05-30T11:56:49.0536491Z"
+          },
+          "collectionId": "dotnetLLCPurviewAccount",
+          "relationshipAttributes": {
+            "schema": [],
+            "inputToProcesses": [],
+            "attachedSchema": [],
+            "meanings": [
+              {
+                "guid": "53a479f5-81bb-4305-9fe0-93af59a72a0b",
+                "typeName": "AtlasGlossaryTerm",
+                "entityStatus": "ACTIVE",
+                "displayText": "testTerm",
+                "relationshipType": "AtlasGlossarySemanticAssignment",
+                "relationshipGuid": "043c9197-e90c-4e4e-bb67-bf24f8538caa",
+                "relationshipStatus": "ACTIVE",
+                "relationshipAttributes": {
+                  "typeName": "AtlasGlossarySemanticAssignment",
+                  "attributes": {
+                    "expression": null,
+                    "createdBy": null,
+                    "steward": null,
+                    "confidence": null,
+                    "description": null,
+                    "source": null,
+                    "status": null
+                  }
+                }
+              }
+            ],
+            "outputFromProcesses": [],
+            "tabular_schema": {
+              "guid": "95599d74-ccb4-45ad-80af-f7f6f6f60000",
+              "typeName": "tabular_schema",
+              "entityStatus": "ACTIVE",
+              "displayText": "tabular_schema",
+              "relationshipType": "tabular_schema_datasets",
+              "relationshipGuid": "a6beab7e-370e-49cb-ba08-48258f35a100",
+              "relationshipStatus": "ACTIVE",
+              "relationshipAttributes": {
+                "typeName": "tabular_schema_datasets"
+              }
+            }
+          },
+          "classifications": [
+            {
+              "typeName": "Microsoft.Label.9FBDE396_1A24_4C79_8EDF_9254A0F35055",
+              "lastModifiedTS": "1",
+              "entityGuid": "26fff2b7-bb60-4443-ad26-47d466de2f45",
+              "entityStatus": "ACTIVE",
+              "source": "LabelService"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Variables": {
+    "PURVIEW_ACCOUNT_URL": "https://dotnetllcpurviewaccount.purview.azure.com/",
+    "RandomSeed": "1799380081"
+  }
+}

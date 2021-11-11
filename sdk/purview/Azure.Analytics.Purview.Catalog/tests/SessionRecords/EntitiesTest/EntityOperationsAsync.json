@@ -1,0 +1,270 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/entity",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "Content-Length": "220",
+        "Content-Type": "application/json",
+        "traceparent": "00-ce47ec6f299d14469f859988b551da06-0e862f082d28474a-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211111.1",
+          "(.NET Core 3.1.21; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "e0276251207e5dfd6e8e43b630365c0f",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": {
+        "entity": {
+          "typeName": "aws_s3_v2_bucket",
+          "attributes": {
+            "qualifiedName": "s3://testpurview",
+            "description": "test-description1020",
+            "accountId": "952454463371",
+            "name": "test-datasource1020",
+            "region": "US West (N. California)"
+          }
+        }
+      },
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Content-Type": "application/json",
+        "Date": "Thu, 11 Nov 2021 07:35:04 GMT",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "88fe7a74-a6b0-4069-ac38-52e391be5027",
+        "x-ms-request-id": "e0276251207e5dfd6e8e43b630365c0f"
+      },
+      "ResponseBody": {
+        "mutatedEntities": {
+          "CREATE": [
+            {
+              "typeName": "aws_s3_v2_bucket",
+              "attributes": {
+                "qualifiedName": "s3://testpurview"
+              },
+              "lastModifiedTS": "1",
+              "guid": "711edfba-80b2-4db7-8c14-bc8855b9d3cb"
+            }
+          ]
+        },
+        "guidAssignments": {
+          "-4665389032098540": "711edfba-80b2-4db7-8c14-bc8855b9d3cb"
+        }
+      }
+    },
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/entity/guid/711edfba-80b2-4db7-8c14-bc8855b9d3cb?minExtInfo=false",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "traceparent": "00-e3488ed16c350141a945522a5319bc87-97c1519fc22cd945-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211111.1",
+          "(.NET Core 3.1.21; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "11975317bb21fdfb315552fb193ec2c2",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 11 Nov 2021 07:35:05 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "91e45ec0-9b89-425c-b7a6-20e4b8583527",
+        "x-ms-request-id": "11975317bb21fdfb315552fb193ec2c2",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": {
+        "referredEntities": {},
+        "entity": {
+          "typeName": "aws_s3_v2_bucket",
+          "attributes": {
+            "owner": null,
+            "s3AccessPolicies": [],
+            "replicatedTo": null,
+            "creationTime": 0,
+            "replicatedFrom": null,
+            "qualifiedName": "s3://testpurview",
+            "lifeCycleRules": [],
+            "description": "test-description1020",
+            "ownerId": null,
+            "cloudWatchMetrics": [],
+            "accountId": "952454463371",
+            "ownerName": null,
+            "encryption": null,
+            "partner": null,
+            "permissions": null,
+            "domain": null,
+            "name": "test-datasource1020",
+            "eTag": null,
+            "region": "US West (N. California)",
+            "awsTags": []
+          },
+          "lastModifiedTS": "1",
+          "guid": "711edfba-80b2-4db7-8c14-bc8855b9d3cb",
+          "status": "ACTIVE",
+          "createdBy": "6d0fee93-2b74-46dd-a497-e74f724b6125",
+          "updatedBy": "6d0fee93-2b74-46dd-a497-e74f724b6125",
+          "createTime": 1636616105081,
+          "updateTime": 1636616105081,
+          "version": 0,
+          "relationshipAttributes": {
+            "schema": [],
+            "inputToProcesses": [],
+            "contained": [],
+            "attachedSchema": [],
+            "meanings": [],
+            "outputFromProcesses": []
+          }
+        }
+      }
+    },
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/entity/guid/711edfba-80b2-4db7-8c14-bc8855b9d3cb/header",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "traceparent": "00-d7c4d4e07f66af4a97e3a3c270da94cb-238e403999bb5c41-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211111.1",
+          "(.NET Core 3.1.21; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "b5133e02b8afe503296d333ffdfc13e5",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 11 Nov 2021 07:35:05 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "aac28efd-d040-44bd-bd1e-7f79b0fdc20c",
+        "x-ms-request-id": "b5133e02b8afe503296d333ffdfc13e5",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": {
+        "typeName": "aws_s3_v2_bucket",
+        "attributes": {
+          "qualifiedName": "s3://testpurview",
+          "name": "test-datasource1020",
+          "description": "test-description1020"
+        },
+        "lastModifiedTS": "1",
+        "guid": "711edfba-80b2-4db7-8c14-bc8855b9d3cb",
+        "status": "ACTIVE",
+        "displayText": "test-datasource1020",
+        "classificationNames": [],
+        "meaningNames": [],
+        "meanings": []
+      }
+    },
+    {
+      "RequestUri": "https://dotnetllcpurviewaccount.purview.azure.com/catalog/api/atlas/v2/entity/guid/711edfba-80b2-4db7-8c14-bc8855b9d3cb",
+      "RequestMethod": "DELETE",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "traceparent": "00-c34c9c25d6fc2b48ba5fe6ff5d77a4e1-d906a17b56c9b24d-00",
+        "User-Agent": [
+          "azsdk-net-Analytics.Purview.Catalog/1.0.0-alpha.20211111.1",
+          "(.NET Core 3.1.21; Microsoft Windows 10.0.22000)"
+        ],
+        "x-ms-client-request-id": "7337fbc137d6966d662aaf29ce01442f",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Access-Control-Allow-Headers": "authorization,content-type,x-xsrf-header,x-ms-client-request-id,lastmodifiedts",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "x-ms-request-id,lastmodifiedts",
+        "Cache-Control": "no-store, must-revalidate, no-cache, max-age=0",
+        "Content-Security-Policy": "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 blob: data:; connect-src \u0027self\u0027; img-src \u0027self\u0027 blob: data:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027;font-src \u0027self\u0027 data:",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 11 Nov 2021 07:35:05 GMT",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "Server": "AzurePurview",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "X-Content-Type-Options": [
+          "nosniff",
+          "nosniff"
+        ],
+        "X-Frame-Options": "DENY",
+        "x-ms-correlation-request-id": "93cbefe1-5500-4803-98c3-ca26ab8922ab",
+        "x-ms-request-id": "7337fbc137d6966d662aaf29ce01442f",
+        "x-xss-protection": "1; mode=block"
+      },
+      "ResponseBody": {
+        "mutatedEntities": {
+          "DELETE": [
+            {
+              "typeName": "aws_s3_v2_bucket",
+              "attributes": {
+                "qualifiedName": "s3://testpurview",
+                "name": "test-datasource1020",
+                "description": "test-description1020"
+              },
+              "lastModifiedTS": "2",
+              "guid": "711edfba-80b2-4db7-8c14-bc8855b9d3cb",
+              "status": "ACTIVE",
+              "displayText": "test-datasource1020",
+              "classificationNames": [],
+              "meaningNames": [],
+              "meanings": []
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Variables": {
+    "PURVIEW_ACCOUNT_URL": "https://dotnetllcpurviewaccount.purview.azure.com/",
+    "RandomSeed": "1093729455",
+    "S3_Account_ID": "952454463371"
+  }
+}

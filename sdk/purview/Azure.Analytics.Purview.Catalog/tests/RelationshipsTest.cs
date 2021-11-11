@@ -20,8 +20,8 @@ namespace Azure.Analytics.Purview.Catalog.Tests
         [RecordedTest]
         public async Task RelationshipsOperations()
         {
-            string glossaryTermResource1GUID = "aab4d687-59f2-44d8-ae7a-f5d6155a2fb0";
-            string glossaryTermResource2GUID = "8a825468-d64e-4ecf-a416-c03fd9a14762";
+            string glossaryTermResource1GUID = "dc1e6399-022c-4559-866e-1638cb84ab91";
+            string glossaryTermResource2GUID = "1736c1f2-c072-4fee-99a1-eb47d156bb12";
             var client = GetRelationshipsClient();
             //Create
             var createData = new
