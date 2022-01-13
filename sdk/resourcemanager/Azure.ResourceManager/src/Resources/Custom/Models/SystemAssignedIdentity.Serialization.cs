@@ -21,7 +21,7 @@ namespace Azure.ResourceManager.Resources.Models
             writer.WritePropertyName("principalId");
             if (!Optional.IsDefined(PrincipalId))
             {
-                writer.WriteStringValue("null");
+                writer.WriteNullValue();
             }
             else
             {
@@ -31,7 +31,7 @@ namespace Azure.ResourceManager.Resources.Models
             writer.WritePropertyName("tenantId");
             if (!Optional.IsDefined(TenantId))
             {
-                writer.WriteStringValue("null");
+                writer.WriteNullValue();
             }
             else
             {

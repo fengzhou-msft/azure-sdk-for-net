@@ -25,13 +25,9 @@ namespace Azure.ResourceManager.Resources.Models
             if (writer == null)
                 throw new ArgumentNullException(nameof(writer));
 
-            writer.WriteStartObject();
-            writer.WritePropertyName("identity");
-
             if (!Optional.IsDefined(SystemAssignedIdentity) && UserAssignedIdentities.Count == 0)
             {
-                writer.WriteStringValue("null");
-                writer.WriteEndObject();
+                writer.WriteNullValue();
                 writer.Flush();
                 return;
             }
@@ -47,7 +43,14 @@ namespace Azure.ResourceManager.Resources.Models
                 foreach (var keyValuePair in UserAssignedIdentities)
                 {
                     writer.WritePropertyName(keyValuePair.Key);
-                    writer.WriteObjectValue(keyValuePair.Value);
+                    if (keyValuePair.Value == null)
+                    {
+                        writer.WriteNullValue();
+                    }
+                    else
+                    {
+                        writer.WriteObjectValue(keyValuePair.Value);
+                    }
                 }
 
                 writer.WriteEndObject();
@@ -67,13 +70,19 @@ namespace Azure.ResourceManager.Resources.Models
                 foreach (var keyValuePair in UserAssignedIdentities)
                 {
                     writer.WritePropertyName(keyValuePair.Key);
-                    writer.WriteObjectValue(keyValuePair.Value);
+                    if (keyValuePair.Value == null)
+                    {
+                        writer.WriteNullValue();
+                    }
+                    else
+                    {
+                        writer.WriteObjectValue(keyValuePair.Value);
+                    }
                 }
 
                 writer.WriteEndObject();
             }
 
-            writer.WriteEndObject();
             writer.WriteEndObject();
             writer.Flush();
         }
