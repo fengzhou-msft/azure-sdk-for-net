@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using Azure;
 using Azure.Core;
 using Azure.Core.Pipeline;
-using Azure.ResourceManager.Core;
+using Azure.ResourceManager;
 using Azure.ResourceManager.Management.Models;
 
 namespace Azure.ResourceManager.Management
@@ -40,7 +40,7 @@ namespace Azure.ResourceManager.Management
             _apiVersion = apiVersion ?? "2021-04-01";
             ClientDiagnostics = clientDiagnostics;
             _pipeline = pipeline;
-            _userAgent = Core.HttpMessageUtilities.GetUserAgentName(this, applicationId);
+            _userAgent = HttpMessageUtilities.GetUserAgentName(this, applicationId);
         }
 
         internal HttpMessage CreateListRequest(string cacheControl, string skiptoken)

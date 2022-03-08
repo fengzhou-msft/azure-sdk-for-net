@@ -8,7 +8,7 @@
 using Azure.Core;
 using Azure.ResourceManager.Resources;
 
-namespace Azure.ResourceManager.Core
+namespace Azure.ResourceManager
 {
     public partial class ArmResource
     {

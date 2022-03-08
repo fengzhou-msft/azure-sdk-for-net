@@ -5,7 +5,7 @@
 
 using System.Collections.Generic;
 using Azure.Core;
-using Azure.ResourceManager.Core;
+using Azure.ResourceManager;
 
 [assembly: CodeGenSuppressType("TrackedResource")]
 namespace Azure.ResourceManager.Models

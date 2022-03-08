@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Azure.Core;
 using Azure.Core.Pipeline;
-using Azure.ResourceManager.Core;
+using Azure.ResourceManager;
 
 [assembly: CodeGenSuppressType("GenericResourceFilter")]
 [assembly: CodeGenSuppressType("GenericResource")]

@@ -4,7 +4,7 @@
 using BenchmarkDotNet.Attributes;
 using Azure.Core;
 using Azure.Core.TestFramework;
-using Azure.ResourceManager.Core;
+using Azure.ResourceManager;
 
 namespace Azure.ResourceManager.Perf
 {

@@ -6,7 +6,7 @@ using System.Linq;
 using NUnit.Framework;
 using Azure.Core.TestFramework;
 using Azure.Core;
-using Azure.ResourceManager.Core;
+using Azure.ResourceManager;
 
 namespace Azure.ResourceManager.Tests
 {

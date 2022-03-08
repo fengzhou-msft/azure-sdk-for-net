@@ -4,7 +4,7 @@
 #nullable disable
 
 using Azure.Core;
-using Azure.ResourceManager.Core;
+using Azure.ResourceManager;
 
 [assembly: CodeGenSuppressType("Resource")]
 namespace Azure.ResourceManager.Models
