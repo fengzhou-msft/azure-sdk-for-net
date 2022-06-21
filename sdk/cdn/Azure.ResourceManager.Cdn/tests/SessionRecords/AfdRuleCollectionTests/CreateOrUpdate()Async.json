@@ -69,7 +69,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus"
       },
       "StatusCode": 201,
@@ -115,7 +114,6 @@
         "sku": {
           "name": "Standard_AzureFrontDoor"
         },
-        "tags": {},
         "location": "Global",
         "properties": {
           "originResponseTimeoutSeconds": 60

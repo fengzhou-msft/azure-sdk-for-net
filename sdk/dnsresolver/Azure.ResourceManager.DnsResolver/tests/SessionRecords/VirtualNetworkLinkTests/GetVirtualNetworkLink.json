@@ -137,7 +137,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus2",
         "properties": {
           "virtualNetwork": {
@@ -653,7 +652,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus2",
         "properties": {
           "subnet": {
@@ -6593,7 +6591,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus2",
         "properties": {
           "dnsResolverOutboundEndpoints": [

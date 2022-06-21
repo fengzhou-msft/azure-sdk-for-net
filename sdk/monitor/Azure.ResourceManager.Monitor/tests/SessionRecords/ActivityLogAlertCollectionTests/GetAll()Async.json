@@ -114,7 +114,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "global",
         "properties": {
           "scopes": [
@@ -201,7 +200,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "global",
         "properties": {
           "scopes": [

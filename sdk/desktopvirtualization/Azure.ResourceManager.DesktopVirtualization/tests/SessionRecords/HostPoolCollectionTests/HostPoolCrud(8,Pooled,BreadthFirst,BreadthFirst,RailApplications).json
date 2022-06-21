@@ -98,7 +98,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "brazilsouth",
         "properties": {
           "hostPoolType": "Pooled",
@@ -282,7 +281,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "brazilsouth",
         "properties": {
           "friendlyName": "Friendly Name",

@@ -163,7 +163,6 @@
           "name": "Premium",
           "tier": "Premium"
         },
-        "tags": {},
         "location": "eastus2",
         "properties": {}
       },
@@ -769,7 +768,6 @@
           "name": "Standard",
           "tier": "Standard"
         },
-        "tags": {},
         "location": "eastus",
         "properties": {}
       },

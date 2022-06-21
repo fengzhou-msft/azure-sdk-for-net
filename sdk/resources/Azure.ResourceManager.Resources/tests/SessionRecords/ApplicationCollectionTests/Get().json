@@ -61,7 +61,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus2"
       },
       "StatusCode": 200,
@@ -105,7 +104,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus2",
         "properties": {
           "lockLevel": "None",
@@ -181,7 +179,6 @@
       },
       "RequestBody": {
         "kind": "ServiceCatalog",
-        "tags": {},
         "location": "westus2",
         "properties": {
           "managedResourceGroupId": "/subscriptions/f3d94233-a9aa-4241-ac82-2dfb63ce637a/resourceGroups/managed-4-9790",

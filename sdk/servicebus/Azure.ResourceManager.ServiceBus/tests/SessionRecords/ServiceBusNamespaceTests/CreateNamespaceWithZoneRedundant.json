@@ -163,7 +163,6 @@
           "name": "Premium",
           "tier": "Premium"
         },
-        "tags": {},
         "location": "eastus2",
         "properties": {
           "zoneRedundant": true

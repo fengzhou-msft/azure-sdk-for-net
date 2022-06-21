@@ -14,7 +14,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus"
       },
       "StatusCode": 201,
@@ -396,7 +395,6 @@
       },
       "RequestBody": {
         "properties": {
-          "tags": {}
         }
       },
       "StatusCode": 200,

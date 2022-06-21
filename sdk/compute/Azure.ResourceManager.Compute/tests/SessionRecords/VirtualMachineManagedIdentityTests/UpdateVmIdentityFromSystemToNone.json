@@ -9647,7 +9647,6 @@
             }
           ]
         },
-        "tags": {},
         "location": "eastus"
       },
       "StatusCode": 201,
@@ -9876,7 +9875,6 @@
             }
           ]
         },
-        "tags": {},
         "location": "eastus"
       },
       "StatusCode": 201,
@@ -10076,7 +10074,6 @@
         "identity": {
           "type": "SystemAssigned"
         },
-        "tags": {},
         "location": "eastus",
         "properties": {
           "hardwareProfile": {

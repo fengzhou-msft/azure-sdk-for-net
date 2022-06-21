@@ -164,7 +164,6 @@
           "tier": "Premium",
           "capacity": 1
         },
-        "tags": {},
         "location": "eastus2",
         "properties": {}
       },
@@ -769,7 +768,6 @@
           "tier": "Premium",
           "capacity": 1
         },
-        "tags": {},
         "location": "eastus",
         "properties": {}
       },

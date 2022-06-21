@@ -9647,7 +9647,6 @@
             }
           ]
         },
-        "tags": {},
         "location": "eastus"
       },
       "StatusCode": 201,
@@ -9876,7 +9875,6 @@
             }
           ]
         },
-        "tags": {},
         "location": "eastus"
       },
       "StatusCode": 201,
@@ -10073,7 +10071,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "eastus",
         "properties": {
           "hardwareProfile": {

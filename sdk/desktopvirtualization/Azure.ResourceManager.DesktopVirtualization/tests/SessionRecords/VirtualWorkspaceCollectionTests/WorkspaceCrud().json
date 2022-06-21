@@ -98,7 +98,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "brazilsouth",
         "properties": {}
       },
@@ -232,7 +231,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "brazilsouth",
         "properties": {
           "friendlyName": "Friendly Name"

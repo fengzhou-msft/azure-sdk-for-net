@@ -9647,7 +9647,6 @@
             }
           ]
         },
-        "tags": {},
         "location": "eastus"
       },
       "StatusCode": 201,
@@ -9879,7 +9878,6 @@
             }
           ]
         },
-        "tags": {},
         "location": "eastus"
       },
       "StatusCode": 201,
@@ -10101,7 +10099,6 @@
           "tier": "Standard",
           "capacity": 2
         },
-        "tags": {},
         "location": "eastus",
         "properties": {
           "upgradePolicy": {
@@ -10870,7 +10867,6 @@
           "tier": "Standard",
           "capacity": 2
         },
-        "tags": {},
         "location": "eastus",
         "properties": {
           "upgradePolicy": {

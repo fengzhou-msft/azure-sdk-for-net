@@ -59,7 +59,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus2"
       },
       "StatusCode": 201,
@@ -138,7 +137,6 @@
       },
       "RequestBody": {
         "kind": "GlobalDocumentDB",
-        "tags": {},
         "location": "westus",
         "properties": {
           "consistencyPolicy": {
@@ -4568,7 +4566,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus",
         "properties": {
           "resource": {

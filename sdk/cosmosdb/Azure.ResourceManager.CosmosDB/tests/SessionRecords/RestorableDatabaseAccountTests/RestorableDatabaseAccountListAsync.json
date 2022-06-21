@@ -51,7 +51,6 @@
       },
       "RequestBody": {
         "kind": "GlobalDocumentDB",
-        "tags": {},
         "location": "westus",
         "properties": {
           "consistencyPolicy": {

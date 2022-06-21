@@ -9647,7 +9647,6 @@
             }
           ]
         },
-        "tags": {},
         "location": "eastus"
       },
       "StatusCode": 201,
@@ -9839,7 +9838,6 @@
             }
           ]
         },
-        "tags": {},
         "location": "eastus"
       },
       "StatusCode": 201,
@@ -10239,7 +10237,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "eastus"
       },
       "StatusCode": 201,
@@ -10330,7 +10327,6 @@
             "/subscriptions/db1ab6f0-4769-4b27-930e-01e2ef9c123c/resourcegroups/testRG-3693/providers/Microsoft.ManagedIdentity/userAssignedIdentities/testRi-6914": {}
           }
         },
-        "tags": {},
         "location": "eastus",
         "properties": {
           "hardwareProfile": {

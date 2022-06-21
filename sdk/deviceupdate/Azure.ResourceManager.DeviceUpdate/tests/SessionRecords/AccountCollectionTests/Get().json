@@ -60,7 +60,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus"
       },
       "StatusCode": 201,
@@ -105,7 +104,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus2",
         "properties": {
           "sku": "Standard"

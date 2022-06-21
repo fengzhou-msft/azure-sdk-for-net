@@ -55,7 +55,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "eastus"
       },
       "StatusCode": 201,
@@ -100,7 +99,6 @@
         "sku": {
           "name": "Standard"
         },
-        "tags": {},
         "location": "eastus",
         "properties": {
           "publicNetworkAccess": "Disabled"
@@ -793,7 +791,6 @@
         "sku": {
           "name": "Standard"
         },
-        "tags": {},
         "location": "eastus",
         "properties": {
           "publicNetworkAccess": "Disabled"

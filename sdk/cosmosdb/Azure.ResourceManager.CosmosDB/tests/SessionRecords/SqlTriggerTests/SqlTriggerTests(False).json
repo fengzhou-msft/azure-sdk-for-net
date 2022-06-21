@@ -59,7 +59,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus2"
       },
       "StatusCode": 201,
@@ -3823,7 +3822,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus",
         "properties": {
           "resource": {
@@ -4380,7 +4378,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus",
         "properties": {
           "resource": {

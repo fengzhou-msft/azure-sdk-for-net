@@ -119,7 +119,6 @@
           "tier": "STANDARD",
           "capacity": 1
         },
-        "tags": {},
         "location": "eastus",
         "properties": {
           "perSiteScaling": false,

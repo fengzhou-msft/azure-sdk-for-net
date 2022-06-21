@@ -14,7 +14,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus"
       },
       "StatusCode": 201,
@@ -60,7 +59,6 @@
         "sku": {
           "name": "ST0"
         },
-        "tags": {},
         "location": "westus",
         "properties": {
           "displayName": "test-app-2757",

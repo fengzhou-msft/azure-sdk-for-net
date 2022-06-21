@@ -56,7 +56,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus"
       },
       "StatusCode": 201,
@@ -102,7 +101,6 @@
         "sku": {
           "name": "Standard_Akamai"
         },
-        "tags": {},
         "location": "westus",
         "properties": {}
       },

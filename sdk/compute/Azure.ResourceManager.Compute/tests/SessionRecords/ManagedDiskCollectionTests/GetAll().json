@@ -119,7 +119,6 @@
         "sku": {
           "name": "Standard_LRS"
         },
-        "tags": {},
         "location": "eastus",
         "properties": {
           "creationData": {
@@ -321,7 +320,6 @@
         "sku": {
           "name": "Standard_LRS"
         },
-        "tags": {},
         "location": "eastus",
         "properties": {
           "creationData": {

@@ -1864,7 +1864,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus2",
         "properties": {
           "administratorLogin": "admin-managed-instance-8034",
@@ -1943,7 +1942,6 @@
         "x-ms-return-client-request-id": "true"
       },
       "RequestBody": {
-        "tags": {},
         "location": "westus2",
         "properties": {
           "administratorLogin": "admin-managed-instance-backup-6275",
