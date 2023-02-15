@@ -86,7 +86,7 @@ namespace Azure.ResourceManager.Avs
                         }
                         if (property0.NameEquals("uri"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 uri = null;
                                 continue;

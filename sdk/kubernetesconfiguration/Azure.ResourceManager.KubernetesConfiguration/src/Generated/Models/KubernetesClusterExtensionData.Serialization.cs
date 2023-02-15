@@ -337,7 +337,7 @@ namespace Azure.ResourceManager.KubernetesConfiguration
                         }
                         if (property0.NameEquals("packageUri"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 packageUri = null;
                                 continue;

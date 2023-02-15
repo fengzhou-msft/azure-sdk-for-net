@@ -130,7 +130,7 @@ namespace Azure.ResourceManager.LabServices
                         }
                         if (property0.NameEquals("iconUrl"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 iconUrl = null;
                                 continue;
@@ -190,7 +190,7 @@ namespace Azure.ResourceManager.LabServices
                         }
                         if (property0.NameEquals("sharedGalleryId"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 property0.ThrowNonNullablePropertyIsNull();
                                 continue;

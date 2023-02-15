@@ -38,7 +38,7 @@ namespace Azure.ResourceManager.Avs.Models
                 }
                 if (property.NameEquals("expressRouteID"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         property.ThrowNonNullablePropertyIsNull();
                         continue;
@@ -48,7 +48,7 @@ namespace Azure.ResourceManager.Avs.Models
                 }
                 if (property.NameEquals("expressRoutePrivatePeeringID"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         property.ThrowNonNullablePropertyIsNull();
                         continue;

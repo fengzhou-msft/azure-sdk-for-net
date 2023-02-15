@@ -190,7 +190,7 @@ namespace Azure.ResourceManager.HealthcareApis
                         }
                         if (property0.NameEquals("serviceUrl"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 serviceUrl = null;
                                 continue;

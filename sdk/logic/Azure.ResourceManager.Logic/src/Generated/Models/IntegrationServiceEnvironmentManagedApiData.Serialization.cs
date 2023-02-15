@@ -218,7 +218,7 @@ namespace Azure.ResourceManager.Logic
                         }
                         if (property0.NameEquals("apiDefinitionUrl"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 apiDefinitionUrl = null;
                                 continue;

@@ -107,7 +107,7 @@ namespace Azure.ResourceManager.ManagedServiceIdentities
                     {
                         if (property0.NameEquals("tenantId"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 property0.ThrowNonNullablePropertyIsNull();
                                 continue;
@@ -117,7 +117,7 @@ namespace Azure.ResourceManager.ManagedServiceIdentities
                         }
                         if (property0.NameEquals("principalId"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 property0.ThrowNonNullablePropertyIsNull();
                                 continue;
@@ -127,7 +127,7 @@ namespace Azure.ResourceManager.ManagedServiceIdentities
                         }
                         if (property0.NameEquals("clientId"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 property0.ThrowNonNullablePropertyIsNull();
                                 continue;
@@ -137,7 +137,7 @@ namespace Azure.ResourceManager.ManagedServiceIdentities
                         }
                         if (property0.NameEquals("clientSecretUrl"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 clientSecretUrl = null;
                                 continue;

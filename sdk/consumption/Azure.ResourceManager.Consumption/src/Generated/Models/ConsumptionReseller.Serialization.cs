@@ -20,7 +20,7 @@ namespace Azure.ResourceManager.Consumption.Models
             {
                 if (property.NameEquals("resellerId"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         property.ThrowNonNullablePropertyIsNull();
                         continue;

@@ -114,7 +114,7 @@ namespace Azure.ResourceManager.ManagedServices.Models
                 }
                 if (property.NameEquals("manageeTenantId"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         property.ThrowNonNullablePropertyIsNull();
                         continue;

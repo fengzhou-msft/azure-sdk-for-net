@@ -100,7 +100,7 @@ namespace Azure.ResourceManager.Batch
                         }
                         if (property0.NameEquals("storageUrl"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 storageUrl = null;
                                 continue;

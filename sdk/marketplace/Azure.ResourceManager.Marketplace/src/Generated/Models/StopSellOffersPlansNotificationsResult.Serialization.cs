@@ -58,7 +58,7 @@ namespace Azure.ResourceManager.Marketplace.Models
                 }
                 if (property.NameEquals("icon"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         icon = null;
                         continue;

@@ -137,7 +137,7 @@ namespace Azure.ResourceManager.FrontDoor.Models
                         }
                         if (property0.NameEquals("endpointA"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 endpointA = null;
                                 continue;
@@ -147,7 +147,7 @@ namespace Azure.ResourceManager.FrontDoor.Models
                         }
                         if (property0.NameEquals("endpointB"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 endpointB = null;
                                 continue;

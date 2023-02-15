@@ -42,7 +42,7 @@ namespace Azure.ResourceManager.LabServices.Models
                 }
                 if (property.NameEquals("sshInBrowserUrl"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         sshInBrowserUrl = null;
                         continue;
@@ -57,7 +57,7 @@ namespace Azure.ResourceManager.LabServices.Models
                 }
                 if (property.NameEquals("rdpInBrowserUrl"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         rdpInBrowserUrl = null;
                         continue;

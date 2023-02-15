@@ -43,7 +43,7 @@ namespace Azure.ResourceManager.Analysis.Models
                 }
                 if (property.NameEquals("dmtsClusterUri"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         dmtsClusterUri = null;
                         continue;

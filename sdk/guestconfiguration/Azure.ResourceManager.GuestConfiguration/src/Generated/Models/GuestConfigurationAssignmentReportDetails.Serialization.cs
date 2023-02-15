@@ -56,7 +56,7 @@ namespace Azure.ResourceManager.GuestConfiguration.Models
                 }
                 if (property.NameEquals("jobId"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         property.ThrowNonNullablePropertyIsNull();
                         continue;

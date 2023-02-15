@@ -181,7 +181,7 @@ namespace Azure.ResourceManager.FrontDoor
                         }
                         if (property0.NameEquals("scriptFileUri"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 scriptFileUri = null;
                                 continue;

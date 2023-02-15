@@ -38,7 +38,7 @@ namespace Azure.ResourceManager.HealthBot.Models
                 }
                 if (property.NameEquals("botManagementPortalLink"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         botManagementPortalLink = null;
                         continue;

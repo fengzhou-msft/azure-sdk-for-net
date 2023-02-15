@@ -341,7 +341,7 @@ namespace Azure.ResourceManager.AppService.Models
                         }
                         if (property0.NameEquals("serverFarmId"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 property0.ThrowNonNullablePropertyIsNull();
                                 continue;
@@ -601,7 +601,7 @@ namespace Azure.ResourceManager.AppService.Models
                         }
                         if (property0.NameEquals("inProgressOperationId"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 property0.ThrowNonNullablePropertyIsNull();
                                 continue;
@@ -626,7 +626,7 @@ namespace Azure.ResourceManager.AppService.Models
                         }
                         if (property0.NameEquals("virtualNetworkSubnetId"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 property0.ThrowNonNullablePropertyIsNull();
                                 continue;

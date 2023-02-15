@@ -153,7 +153,7 @@ namespace Azure.ResourceManager.Consumption.Models
                         }
                         if (property0.NameEquals("instanceId"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 property0.ThrowNonNullablePropertyIsNull();
                                 continue;

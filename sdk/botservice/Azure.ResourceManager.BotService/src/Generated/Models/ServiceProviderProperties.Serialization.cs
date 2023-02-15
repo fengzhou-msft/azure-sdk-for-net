@@ -41,7 +41,7 @@ namespace Azure.ResourceManager.BotService.Models
                 }
                 if (property.NameEquals("devPortalUrl"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         devPortalUrl = null;
                         continue;
@@ -51,7 +51,7 @@ namespace Azure.ResourceManager.BotService.Models
                 }
                 if (property.NameEquals("iconUrl"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         iconUrl = null;
                         continue;

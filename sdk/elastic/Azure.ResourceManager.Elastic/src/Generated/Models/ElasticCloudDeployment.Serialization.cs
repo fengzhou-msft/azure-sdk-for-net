@@ -52,7 +52,7 @@ namespace Azure.ResourceManager.Elastic.Models
                 }
                 if (property.NameEquals("elasticsearchServiceUrl"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         elasticsearchServiceUrl = null;
                         continue;
@@ -62,7 +62,7 @@ namespace Azure.ResourceManager.Elastic.Models
                 }
                 if (property.NameEquals("kibanaServiceUrl"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         kibanaServiceUrl = null;
                         continue;
@@ -72,7 +72,7 @@ namespace Azure.ResourceManager.Elastic.Models
                 }
                 if (property.NameEquals("kibanaSsoUrl"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         kibanaSsoUrl = null;
                         continue;

@@ -30,7 +30,7 @@ namespace Azure.ResourceManager.GuestConfiguration.Models
             {
                 if (property.NameEquals("vmId"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         property.ThrowNonNullablePropertyIsNull();
                         continue;
@@ -40,7 +40,7 @@ namespace Azure.ResourceManager.GuestConfiguration.Models
                 }
                 if (property.NameEquals("vmResourceId"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         property.ThrowNonNullablePropertyIsNull();
                         continue;
@@ -60,7 +60,7 @@ namespace Azure.ResourceManager.GuestConfiguration.Models
                 }
                 if (property.NameEquals("latestReportId"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         latestReportId = null;
                         continue;

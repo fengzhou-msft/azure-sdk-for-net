@@ -31,7 +31,7 @@ namespace Azure.ResourceManager.DataMigration.Models
             {
                 if (property.NameEquals("backupSetId"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         property.ThrowNonNullablePropertyIsNull();
                         continue;

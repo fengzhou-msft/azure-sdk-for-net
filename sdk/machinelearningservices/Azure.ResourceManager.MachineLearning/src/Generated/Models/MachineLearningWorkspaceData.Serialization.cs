@@ -430,7 +430,7 @@ namespace Azure.ResourceManager.MachineLearning
                         }
                         if (property0.NameEquals("tenantId"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 property0.ThrowNonNullablePropertyIsNull();
                                 continue;
@@ -450,7 +450,7 @@ namespace Azure.ResourceManager.MachineLearning
                         }
                         if (property0.NameEquals("mlFlowTrackingUri"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 mlFlowTrackingUri = null;
                                 continue;

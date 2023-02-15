@@ -266,7 +266,7 @@ namespace Azure.ResourceManager.AppContainers
                         }
                         if (property0.NameEquals("eventStreamEndpoint"u8))
                         {
-                            if (property0.Value.ValueKind == JsonValueKind.Null)
+                            if (property0.Value.ValueKind == JsonValueKind.Null || property0.Value.GetString().Length == 0)
                             {
                                 eventStreamEndpoint = null;
                                 continue;

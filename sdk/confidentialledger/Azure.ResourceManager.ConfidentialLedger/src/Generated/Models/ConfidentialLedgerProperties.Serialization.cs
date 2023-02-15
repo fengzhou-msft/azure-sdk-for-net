@@ -64,7 +64,7 @@ namespace Azure.ResourceManager.ConfidentialLedger.Models
                 }
                 if (property.NameEquals("ledgerUri"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         ledgerUri = null;
                         continue;
@@ -74,7 +74,7 @@ namespace Azure.ResourceManager.ConfidentialLedger.Models
                 }
                 if (property.NameEquals("identityServiceUri"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         identityServiceUri = null;
                         continue;

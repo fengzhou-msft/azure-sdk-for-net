@@ -20,7 +20,7 @@ namespace Azure.ResourceManager.AppComplianceAutomation.Models
             {
                 if (property.NameEquals("sasUri"u8))
                 {
-                    if (property.Value.ValueKind == JsonValueKind.Null)
+                    if (property.Value.ValueKind == JsonValueKind.Null || property.Value.GetString().Length == 0)
                     {
                         sasUri = null;
                         continue;
